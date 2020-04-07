@@ -1,0 +1,42 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0;
+}
+
+.container {
+	margin: 0 auto;
+	background-color: red;
+	width: 90%;
+	min-height: 100vh;
+}
+
+h1 {
+	padding: 15px;
+	text-align: center;
+	border-bottom: solid black 1px;
+}
+
+.flags {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	flex: 1;
+	margin: 0 auto;
+	width: 90%;
+	height: 400px;
+	background-color: blanchedalmond;
+}
+
+.flags h2 {
+	text-align: center;
+}
+
+.flag {
+	background-color: blueviolet;
+	width: 90%;
+	height: 90%;
+	margin: 10px;
+}
