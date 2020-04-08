@@ -14,9 +14,9 @@ _date update:04/07/20_
 
 ## Potential Contacts
 
--[ ] Callaway Cloud Consulting
--[ ] Brian Madina
--[ ] Brad or Thomas Elevar
+- [ ] Callaway Cloud Consulting
+- [ ] Brian Madina
+- [ ] Brad or Thomas Elevar
 
 ## Research
 
