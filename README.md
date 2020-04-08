@@ -3,8 +3,7 @@
 ## Module-1
 
 - [CSS-Flags](https://github.com/dholland/vschool-assignments/tree/master/module-1/01_css-flags)
-
-## Module-2
+- [Resonsive Color Grid](https://github.com/dholland/vschool-assignments/tree/master/01_module-1/02_responsive-color-grid)
 
 ## Career-Prep
 
