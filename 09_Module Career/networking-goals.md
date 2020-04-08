@@ -14,12 +14,12 @@ _date update:04/07/20_
 
 ## Potential Contacts
 
-- [ ] Callaway Cloud Consulting
-- [ ] Brian Madina
+- [ ] Callaway Cloud
+- [ ] TMBR
 - [ ] Brad or Thomas Elevar
 
 ## Research
- - [ ] Find 2 companies I would want to work for.
+ - [ ] Find 2 companies I would want to work for. 
 
 **Ideas:**
 
