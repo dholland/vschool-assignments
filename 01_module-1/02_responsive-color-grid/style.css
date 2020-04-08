@@ -1,0 +1,113 @@
+* {
+	box-sizing: border-box;
+	font-size: 0px;
+}
+
+:root {
+	--light-pink: #f5c6d6;
+	--pink: #ee2e84;
+	--blue: #85cfd8;
+	--green: #8dc63f;
+	--orange: #e76e34;
+}
+
+body {
+	background-color: cornflowerblue;
+}
+
+.light-pink {
+	background-color: var(--light-pink);
+}
+
+.pink {
+	background-color: var(--pink);
+}
+
+.blue {
+	background-color: var(--blue);
+}
+
+.green {
+	background-color: var(--green);
+}
+
+.orange {
+	background-color: var(--orange);
+}
+
+.container {
+	width: 1064px;
+	height: 768px;
+	margin: 0 auto;
+	background-color: aliceblue;
+}
+
+.boxes {
+	margin: 75px;
+	padding-top: 75px;
+}
+
+.box-100 {
+	width: calc(100% - 10px);
+	height: 140px;
+	margin-bottom: 10px;
+}
+
+.box-75 {
+	display: inline-block;
+	width: calc(75% - 10px);
+	height: 140px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.box-50 {
+	display: inline-block;
+	width: calc(50% - 10px);
+	height: 140px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.box-25 {
+	display: inline-block;
+	width: calc(25% - 10px);
+	height: 140px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+	.box-100 {
+		display: inline-block;
+		width: 100%;
+		height: 140px;
+		margin: 1px;
+	}
+
+	.box-75 {
+		display: inline-block;
+		width: 100%;
+		height: 140px;
+		margin: 1px;
+	}
+
+	.box-50 {
+		display: inline-block;
+		width: 100%;
+		height: 140px;
+		margin: 1px;
+	}
+
+	.box-25 {
+		display: inline-block;
+		width: 100%;
+		height: 140px;
+		margin: 1px;
+	}
+	.container {
+		width: 100vw;
+		height: 100%;
+		background-color: aliceblue;
+	}
+}
