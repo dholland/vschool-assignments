@@ -1,10 +1,10 @@
 # Networking Goals
 
-date update:
+_date update:04/07/20_
 
 ## Connect
 
-Reach out to 2-3 contacts currently working in software development and ask the following Questions:
+-[] Reach out to 2-3 contacts currently working in software development and ask the following Questions:
 
 - What type of skills are you looking for.
 - What kind of specific task would I need to be able to accomplish on my own. Any Examples.
@@ -14,21 +14,26 @@ Reach out to 2-3 contacts currently working in software development and ask the 
 
 ## Potential Contacts
 
-[] Callaway Cloud Consulting
-[] Brian Madina
-[] Brad or Thomas Elevar
+-[] Callaway Cloud Consulting
+-[] Brian Madina
+-[] Brad or Thomas Elevar
 
 ## Research
 
-Find 2 companies I would want to work for.
+-[] Find 2 companies I would want to work for.
 
-- What's them arket segment.
-  -- Startup Tech, building product, supporting customers monthly RR profit systems
+**Ideas:**
+
+- What's the market segment.
+  - Startup Tech, building product, supporting customers monthly RR profit systems
 - What size of company do I want to work for.
-  ECommerce - Selling online, Shopify or other platform. Skills associated with those platforms.
-  Building Apps for the platform
+- ECommerce
+  - Shopify or other platform.
+  - Skills associated with those platforms.
+  - Building Apps for the platform
 
-- Automation Business Consulting
+**Automation Business Consulting**
+
 - Data management
 - Through what avenue?
 - Setup and consulting.
@@ -37,4 +42,3 @@ Find 2 companies I would want to work for.
 - Customer Services departments
 - Systems and Ops
 - Project Management
--
