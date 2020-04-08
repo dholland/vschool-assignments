@@ -4,7 +4,7 @@ _date update:04/07/20_
 
 ## Connect
 
--[] Reach out to 2-3 contacts currently working in software development and ask the following Questions:
+-[ ] Reach out to 2-3 contacts currently working in software development and ask the following Questions:
 
 - What type of skills are you looking for.
 - What kind of specific task would I need to be able to accomplish on my own. Any Examples.
@@ -14,13 +14,13 @@ _date update:04/07/20_
 
 ## Potential Contacts
 
--[] Callaway Cloud Consulting
--[] Brian Madina
--[] Brad or Thomas Elevar
+-[ ] Callaway Cloud Consulting
+-[ ] Brian Madina
+-[ ] Brad or Thomas Elevar
 
 ## Research
 
--[] Find 2 companies I would want to work for.
+-[ ] Find 2 companies I would want to work for.
 
 **Ideas:**
 
