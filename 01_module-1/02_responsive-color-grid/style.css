@@ -47,34 +47,31 @@ body {
 	padding-top: 75px;
 }
 
-.box-100 {
-	width: calc(100% - 10px);
+.box {
 	height: 140px;
 	margin-bottom: 10px;
+}
+
+.box-100 {
+	width: calc(100% - 10px);
 }
 
 .box-75 {
 	display: inline-block;
 	width: calc(75% - 10px);
-	height: 140px;
 	margin-right: 10px;
-	margin-bottom: 10px;
 }
 
 .box-50 {
 	display: inline-block;
 	width: calc(50% - 10px);
-	height: 140px;
 	margin-right: 10px;
-	margin-bottom: 10px;
 }
 
 .box-25 {
 	display: inline-block;
 	width: calc(25% - 10px);
-	height: 140px;
 	margin-right: 10px;
-	margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {
