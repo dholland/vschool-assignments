@@ -21,13 +21,13 @@ body {
 .container {
 	width: 1440px;
 	margin: 0 auto;
+	background: url(/images/bg-simplify-section-desktop.svg) no-repeat top right;
 }
 
 nav {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
-	width: 100%;
 	height: 50px;
 	margin-top: 50px;
 	color: var(--very-dark-blue);
@@ -56,7 +56,7 @@ button {
 
 nav .logo {
 	background: no-repeat center url(./images/logo.svg);
-	width: 140px;
+	width: 150px;
 	height: 40px;
 }
 
@@ -66,4 +66,38 @@ h1 {
 
 h2 {
 	font-size: 24px;
+}
+
+p {
+	color: var(--dark-grayish-blue);
+}
+
+.hero {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	height: 550px;
+	margin-top: 100px;
+	padding: 100px;
+}
+
+.left {
+	width: 50%;
+}
+
+.hero-img {
+	background: no-repeat url(./images/illustration-intro.svg);
+	width: 100%;
+	height: 470px;
+}
+
+.features {
+	display: flex;
+	flex: 1;
+	flex-basis: 50%;
+	padding: 100px;
+}
+
+.features ul {
+	width: 50%;
 }
