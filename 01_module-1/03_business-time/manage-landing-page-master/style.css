@@ -16,20 +16,38 @@ body {
 	font-size: 16px;
 	margin: 0;
 	font-family: 'Be Vietnam', sans-serif;
+	font-weight: 300;
+}
+::-webkit-scrollbar {
+	display: none;
+}
+
+.boxes ul::-webkit-scrollbar {
+	height: 4px;
+	width: 4px;
+	background: gray;
+}
+.boxes ul::-webkit-scrollbar-thumb:horizontal {
+	background: #000;
+	border-radius: 10px;
+	-webkit-overflow-scrolling: touch;
 }
 
 .container {
-	width: 1440px;
+	max-width: 1440px;
 	margin: 0 auto;
-	background: url(/images/bg-simplify-section-desktop.svg) no-repeat top right;
+	background: url('./images/bg-tablet-pattern.svg') no-repeat top -200px right -100px,
+		url('./images/bg-tablet-pattern.svg') no-repeat top 70% left -200px;
 }
 
 nav {
+	width: 1110px;
+	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	height: 50px;
-	margin-top: 50px;
+	padding-top: 75px;
 	color: var(--very-dark-blue);
 	font-family: 'Be Vietnam', sans-serif;
 	font-weight: 700;
@@ -38,66 +56,207 @@ nav {
 nav ul {
 	display: flex;
 	list-style: none;
+	padding-right: 50px;
 }
 
 nav ul li {
 	margin-left: 30px;
+	font-size: 14px;
+	color: var(--dark-blue);
+	font-weight: 300;
 }
 
 button {
 	justify-self: flex-end;
+	width: 136px;
+	height: 44px;
 	border-radius: 40px;
-	padding: 15px 30px;
-	color: white;
+	color: var(--vary-light-gray);
 	background-color: hsl(12, 88%, 59%);
 	border: none;
+	font-size: 13px;
 	font-weight: 500;
+	box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+	background-color: #f98f75;
 }
 
 nav .logo {
-	background: no-repeat center url(./images/logo.svg);
+	background: url('./images/logo.svg') center 15px no-repeat;
 	width: 150px;
 	height: 40px;
 }
 
 h1 {
-	font-size: 34px;
+	font-size: 56px;
+	padding: 0;
+	line-height: 64px;
+	color: var(--dark-blue);
 }
 
 h2 {
-	font-size: 24px;
+	font-size: 36px;
+	padding: 0;
+	line-height: 50px;
+	color: var(--dark-blue);
 }
 
 p {
 	color: var(--dark-grayish-blue);
 }
 
+.tagline {
+	width: 350px;
+	line-height: 24px;
+	padding-bottom: 15px;
+}
+
 .hero {
+	width: 1110px;
+	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
 	height: 550px;
 	margin-top: 100px;
-	padding: 100px;
 }
 
 .left {
+	margin-top: 50px;
 	width: 50%;
 }
 
 .hero-img {
-	background: no-repeat url(./images/illustration-intro.svg);
-	width: 100%;
-	height: 470px;
+	background: url('./images/illustration-intro.svg') center;
+	height: 525px;
+	width: 580px;
+	margin-top: 50px;
 }
 
 .features {
 	display: flex;
 	flex: 1;
-	flex-basis: 50%;
-	padding: 100px;
+	width: 1110px;
+	margin: 0 auto;
 }
 
 .features ul {
 	width: 50%;
+	padding-top: 50px;
+	list-style: none;
+}
+
+.features .num {
+	background-color: var(--bright-red);
+	border-radius: 40px;
+	padding-top: 8px;
+	width: 68px;
+	height: 40px;
+	display: inline-block;
+	text-align: center;
+	color: #fff;
+}
+
+.features strong {
+	color: hsl(228, 39%, 23%);
+	padding-left: 20px;
+}
+
+.features ul li p {
+	padding-left: 88px;
+	margin-top: 0;
+	padding-top: 15px;
+}
+
+.testimonials {
+	margin-bottom: 100px;
+}
+
+.testimonials h2 {
+	text-align: center;
+}
+
+.boxes ul {
+	list-style: none;
+	display: flex;
+	overflow-x: auto;
+}
+
+.boxes ul li {
+	width: 540px;
+	height: 225px;
+	flex: 1 0 auto;
+	margin-left: 30px;
+	margin-top: 60px;
+	text-align: center;
+	background-color: var(--vary-light-gray);
+	border: thin var(--vary-light-gray);
+}
+
+.boxes li img {
+	width: 72px;
+	height: 72px;
+	position: relative;
+	top: -20px;
+	margin: -30px;
+}
+
+.boxes li p {
+	padding: 0 15px;
+}
+
+.boxes .btn {
+	margin: 25px 0;
+	display: flex;
+	justify-content: center;
+}
+
+.cta {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	height: 220px;
+	background: var(--bright-red) url('./images/bg-simplify-section-desktop.svg')
+		center no-repeat;
+}
+
+.cta h2 {
+	color: var(--vary-light-gray);
+}
+
+.cta button {
+	background-color: white;
+	color: hsl(12, 88%, 59%);
+}
+
+footer {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 250px;
+	background-color: var(--very-dark-blue);
+	color: var(--vary-light-gray);
+	padding-bottom: 50px;
+}
+
+footer ul {
+	list-style: none;
+	line-height: 30px;
+	font-size: 12px;
+}
+
+.logos {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100px;
+}
+.logos .icons {
+}
+
+.logos i {
+	padding-right: 10px;
+	font-size: 25px;
 }
