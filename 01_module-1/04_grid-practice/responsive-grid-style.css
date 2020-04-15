@@ -1,0 +1,35 @@
+* {
+	box-sizing: border-box;
+}
+
+.container-grid {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+}
+
+header {
+	grid-area: 1 / 1 / 2 / 13;
+}
+aside .side-bar1 {
+	grid-area: 2 / 1 / 5 / 4;
+}
+main {
+	grid-area: 2 / 4 / 5 / 11;
+}
+aside .side-bar2 {
+	grid-area: 2 / 11 / 5 / 13;
+}
+footer {
+	grid-area: 5 / 1 / 6 / 13;
+}
+
+/* Tablet */
+@media screen and (max-width: 700px) {
+}
+
+/* Phone */
+@media screen and (max-width: 475px) {
+}
