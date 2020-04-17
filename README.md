@@ -9,7 +9,6 @@
 - [Node Calculator](https://github.com/dholland/vschool-assignments/tree/master/01_module-1/05_node-calculator)
 - [Escape Room](https://github.com/dholland/vschool-assignments/tree/master/01_module-1/06_escape-room)
 - [Daily Planet](https://github.com/dholland/vschool-assignments/tree/master/01_module-1/07_daily-planet)
--
 
 ## Career-Prep
 
