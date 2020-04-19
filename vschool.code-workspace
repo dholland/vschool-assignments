@@ -3,8 +3,5 @@
 		{
 			"path": "."
 		}
-	],
-	"settings": {
-		// "liveServer.settings.root": "01_module-1/04_grid-practice/grid-practice.html"
-	}
+	]
 }
