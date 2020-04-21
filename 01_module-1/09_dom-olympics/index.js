@@ -31,11 +31,13 @@ header.innerHTML +=
 //Get Message Div's and replace with message array
 const msgList = document.querySelectorAll('#message-list > div');
 
+const msgListClear = document.querySelector('#message-list');
+
 for (var i = 0; i < msgList.length; i++) {
 	msgList[i].innerHTML = messages[i].msg;
 }
 
-console.log('MESSAGE LIST', msgList);
+// console.log('MESSAGE LIST', msgList);
 
 //Select Clear Button
 let clearBtn = document.getElementById('clear-button');
@@ -45,7 +47,7 @@ console.log(clearBtn);
 clearBtn.addEventListener('click', handleClear);
 
 function handleClear() {
-	console.log('clicked');
+	msgListClear.innerHTML = '<div></div>';
 }
 
 //Change Theme
@@ -96,6 +98,8 @@ console.log(inputVal);
 const sendBtn = document.getElementById('sendBtn');
 sendBtn.addEventListener('click', addMessage);
 
+let currentSide = '';
+
 function addMessage() {
 	//get inputvalue
 	let inputVal = document.getElementById('input').value;
@@ -105,35 +109,23 @@ function addMessage() {
 	let newMsg = document.createElement('div');
 	//set input value to the text of the new div
 	newMsg.textContent = inputVal;
-
-	function switchSides() {
-		let currentSide = '';
-		console.log(currentSide);
-		if (currentSide == 'right') {
-			//set class items for new div message
-			newMsg.classList.add('message', 'left');
-			currentSide = 'left';
-			console.log(currentSide);
-		} else {
-			newMsg.classList.add('message', 'right');
-			console.log(currentSide);
-			currentSide = 'right';
-		}
-	}
-
-	switchSides();
+	switchSides(newMsg);
 	//append the new div to the message node
 	msgList.appendChild(newMsg);
 	getTheme();
-
 	document.getElementById('input').value = '';
-
 	// return currentSide;
 }
-
-// console.log(currentSide);
-
-console.log(msgList);
-// function clearForm() {
-//     document.getElementById('input').reset();
-// }
+function switchSides(newMsg) {
+	console.log(currentSide);
+	if (currentSide == 'left') {
+		//set class items for new div message
+		newMsg.classList.add('message', 'right');
+		currentSide = 'right';
+		console.log(currentSide);
+	} else {
+		newMsg.classList.add('message', 'left');
+		console.log(currentSide);
+		currentSide = 'left';
+	}
+}
