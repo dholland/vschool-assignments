@@ -10,6 +10,8 @@
 - [Escape Room](https://github.com/dholland/vschool-assignments/tree/master/01_module-1/06_escape-room)
 - [Daily Planet](https://github.com/dholland/vschool-assignments/tree/master/01_module-1/07_daily-planet)
 - [DJ JS](https://github.com/dholland/vschool-assignments/tree/master/01_module-1/08_dj-js)
+- [DOM Olympics](https://github.com/dholland/vschool-assignments/tree/master/01_module-1/09_dom-olympics)
+- [DOM Debug](https://github.com/dholland/vschool-assignments/tree/master/01_module-1/10_dom-debug)
 
 ## Career-Prep
 
