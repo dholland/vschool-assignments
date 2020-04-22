@@ -38,7 +38,7 @@ function startGame() {
 
 	sleep(2000);
 
-	console.log('You are suck deep inside a cave with only one way out.', '\n');
+	console.log('You are stuck deep inside a cave with only one way out.', '\n');
 
 	sleep(2000);
 
