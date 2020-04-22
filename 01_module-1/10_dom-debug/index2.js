@@ -1,4 +1,8 @@
-const colors = ['#7ebdb4', '#f6d198', '#862a5c'];
+const colors = [
+	{ name: 'Retro Green', value: '#7ebdb4' },
+	{ name: 'Desert Sky', value: '#f6d198' },
+	{ name: 'Retro Rust', value: '#f4a548' },
+];
 
 document.getElementById('add').addEventListener('click', function (e) {
 	console.log('clicked');
@@ -10,8 +14,8 @@ function createDropDown() {
 	const dropDown = document.createElement('select');
 	for (let i = 0; i < colors.length; i++) {
 		const option = document.createElement('option');
-		option.innerHTML = colors[i];
-		option.value = colors[i];
+		option.innerHTML = colors[i].name;
+		option.value = colors[i].value;
 		dropDown.append(option);
 	}
 	dropDown.addEventListener('change', function (e) {
