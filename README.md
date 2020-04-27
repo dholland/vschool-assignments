@@ -12,6 +12,7 @@
 - [DJ JS](https://github.com/dholland/vschool-assignments/tree/master/01_module-1/08_dj-js)
 - [DOM Olympics](https://github.com/dholland/vschool-assignments/tree/master/01_module-1/09_dom-olympics)
 - [DOM Debug](https://github.com/dholland/vschool-assignments/tree/master/01_module-1/10_dom-debug)
+- [Mom's Shopping List](https://github.com/dholland/vschool-assignments/tree/master/01_module-1/11_moms-shopping-list)
 
 ## Career-Prep
 
