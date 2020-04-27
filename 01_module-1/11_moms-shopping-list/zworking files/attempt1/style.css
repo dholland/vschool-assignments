@@ -1,0 +1,99 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 18px;
+}
+
+.wrapper {
+	margin: 200px auto;
+	width: 500px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.add--todo {
+	width: 800px;
+}
+
+.add--todo input {
+	height: 80px;
+	width: 60%;
+	font-size: 24px;
+	padding: 10px;
+}
+
+.add--todo button {
+	width: 150px;
+	height: 80px;
+	font-size: 24px;
+}
+
+.todo--list {
+	display: flex;
+	flex-direction: column;
+}
+
+.todo--item {
+	margin-top: 15px;
+	font-size: 24px;
+	padding: 0 0;
+	border: 0.5px solid slategray;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+ul li {
+	list-style: none;
+}
+
+li p {
+	display: inline-block;
+}
+
+.completed {
+	background-color: coral;
+}
+
+input[type='checkbox'].css-checkbox {
+	position: absolute;
+	z-index: -1000;
+	left: -1000px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+}
+
+input[type='checkbox'].css-checkbox + label.css-label {
+	padding-left: 70px;
+	height: 50px;
+	display: inline-block;
+	line-height: 50px;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	font-size: 40px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+input[type='checkbox'].css-checkbox:checked + label.css-label {
+	background-position: 0 -50px;
+}
+label.css-label {
+	background-image: url(http://csscheckbox.com/checkboxes/u/csscheckbox_7a51de2f6764739a60a1c57b7736eb7f.png);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}

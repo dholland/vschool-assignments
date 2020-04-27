@@ -39,9 +39,6 @@ function updateTodo() {
 	LIST[currentEl.id].name = newVal;
 	console.log(newVal);
 	console.log(LIST[0].name);
-
-	// LIST[currentEl].name = newVal;
-	// console.log(LIST[eid].name);
 	editing = false;
 	submitBtn.textContent = 'Add ToDo';
 	inputVal.value = '';
