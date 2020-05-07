@@ -81,8 +81,8 @@ function encode(str, shift) {
 		});
 	}
 
-	console.log('first index', firstIndex.length);
-	console.log('new index', newIndex.length);
+	// console.log('first index', firstIndex.length);
+	// console.log('new index', newIndex.length);
 
 	//put sentence back together
 	let newStr = [];
