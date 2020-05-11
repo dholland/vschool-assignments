@@ -28,16 +28,44 @@ if (begin == true) {
 // Every time the player walks, a random algorithm will be run that determines if a wild enemy has appeared (A 1/3 or 1/4 chance of being attacked)
 
 //Constructor Character
-function Character(name, health, weapon, runCount) {
-	this.name = name;
-	this.health = health;
-	this.weapon = weapon;
-	this.runCount = runCount;
+class Character {
+	constructor(name, health, weapon, runCount) {
+		this.name = name;
+		this.health = health;
+		this.weapon = weapon;
+		this.runCount = runCount;
+	}
+	walk() {}
+}
+
+class Enemy extends Character {
+	constructor(name, health, weapon, type) {
+		super(name, health, weapon);
+		this.type = type;
+	}
+}
+const enemies = [];
+for (let i = 0; i < 4; i++) {
+	enemies.push(
+		new Enemy(names[Math.random()], Math.random() * 100) + 20,
+		weapons[Math.random]
+	);
+}
+
+///Spread operator can help pass in a array as a comma seperated list.
+const enemy = new Enemy(...createTraits());
+
+function createTraits() {
+	return ['name', 100, 'weapon', 'troll'];
 }
 
 Character.prototype.walk = function () {
+	console.log(
+		`A ${enemy.type} is in the path and you see that he is carrying a ${enemy.weapon}`
+	);
+
 	const willFight = readline.question(
-		'(f) for fighting, (r) to run away, (i) to check inventory \n'
+		'would you like to: (f) for fighting, (r) to run away, (i) to check inventory \n'
 	);
 	if (willFight === 'f') {
 		this.fight();
@@ -76,6 +104,25 @@ Character.prototype.run = function () {
 	// }
 };
 
+// while(isAlive){
+// 	question (wanna walk or look at invetory)
+// 	if{
+// 		walk()
+// 	}else if {
+// 		printInveory()
+// 	}
+// }
+
+// function walk(){
+// 	if(enemyFound){
+// 		let enemy = enemies[Math.floor(Math.random()*enemies.elngt)]
+// 		fight(enemy)
+// 	}
+// }
+
+// function fight (enemy){
+
+// }
 function gameOver() {
 	console.log('GAME OVER');
 	clear();
@@ -91,6 +138,7 @@ function startGame() {
 	const hero = new Character(playerName, 100, 'knife', 0);
 
 	console.log(hero);
+	console.log(enemy);
 
 	// wait(1000);
 	console.log(`Welcome ${playerName} enjoy the game`);
