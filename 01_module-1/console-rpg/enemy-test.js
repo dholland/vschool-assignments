@@ -17,31 +17,31 @@ const winner2 = Math.floor(Math.random() * 2);
 const winner1 = Math.floor(Math.random() * 2);
 
 // console.log(winner, winner1, winner2);
-let on = true;
-let health = 5;
-let arr = [1, 2, 3, 4];
-let counter = 0;
+// let on = true;
+// let health = 5;
+// let arr = [1, 2, 3, 4];
+// let counter = 0;
 
-function playGame() {
-	if (health === 0) {
-		return false;
-	} else if (arr.length === 0) {
-		return false;
-	} else return true;
-}
+// function playGame() {
+// 	if (health === 0) {
+// 		return false;
+// 	} else if (arr.length === 0) {
+// 		return false;
+// 	} else return true;
+// }
 
-function changeHealth() {
-	if (counter === 3) health = 0;
-}
+// function changeHealth() {
+// 	if (counter === 3) health = 0;
+// }
 
-console.log('true question', playGame);
+// console.log('true question', playGame);
 
-while (playGame() == true) {
-	console.log('Playing Game');
-	counter++;
-	console.log(arr);
-	wait(1);
-	arr.pop();
-	changeHealth();
-}
-console.log('exit');
+// while (playGame() == true) {
+// 	console.log('Playing Game');
+// 	counter++;
+// 	console.log(arr);
+// 	wait(1);
+// 	arr.pop();
+// 	changeHealth();
+// }
+// console.log('exit');
