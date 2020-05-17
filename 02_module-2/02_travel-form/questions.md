@@ -5,3 +5,5 @@
 - I keep getting itorator or null when trying to access values or name
 
 - Is there a way to look at the object info?
+
+using formData.entries() and formData.values
