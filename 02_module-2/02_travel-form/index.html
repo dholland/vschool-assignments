@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="flex--center">
+			<h1>Travel Form</h1>
+			<form name="travelForm" id="travelForm">
+				<label for="firstName">First Name:</label>
+				<input type="text" name="firstName" autocomplete="off" />
+
+				<label for="lastName">Last Name:</label>
+				<input type="text" name="lastName" autocomplete="off" />
+
+				<label for="age">Age:</label>
+				<input type="number" name="age" autocomplete="off" />
+
+				<label for="destination">Destination:</label>
+				<select form_id="travelForm" name="destination" class="dropDown">
+					<option value="Portugal">Portugal</option>
+					<option value="British Virgin Islands">British Virgin Islands</option>
+					<option value="Saint Lucia">Saint Lucia</option>
+				</select>
+
+				<label class="sectionHeader">Gender</label>
+				<label for="male">Male</label>
+				<input type="radio" id="male" name="gender" value="male" />
+				<label for="female">Female</label>
+				<input type="radio" id="female" value="female" name="gender" />
+
+				<label class="sectionHeader">Dierary Restrictions</label>
+				<label for="veg">Vegetarian</label>
+				<input type="checkbox" id="veg" name="Vegetarian" />
+				<label for="kosher">Kosher</label>
+				<input type="checkbox" id="kosher" name="Kosher" />
+				<label for="lactose">Lactose Free</label>
+				<input type="checkbox" id="lactose" name="Lactose Free" />
+
+				<button type="submit">Submit</button>
+			</form>
+		</div>
+		<script src="index.js"></script>
+	</body>
+</html>
