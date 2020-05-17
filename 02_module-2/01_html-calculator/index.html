@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Document</title>
+		<style>
+			.container {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				height: 100vh;
+
+				margin: 0 auto;
+				padding: 50px;
+				background-color: rgb(233, 228, 224);
+			}
+			.flex {
+				display: flex;
+				align-content: flex-start;
+			}
+			.results-title {
+				font-size: 2.2rem;
+				margin-right: 10px;
+			}
+			.results-number {
+				font-size: 2.2rem;
+				color: cornflowerblue;
+			}
+			input {
+				font-size: 1rem;
+				font-weight: 100;
+				color: #333;
+			}
+
+			button {
+				background-color: #8794f9;
+				border: none;
+				color: #fff;
+				padding: 0.25rem 2rem;
+				font-size: 1rem;
+				font-weight: 100;
+				margin-left: 8px;
+			}
+
+			h1 {
+				text-align: center;
+				font-size: 3rem;
+			}
+			#calc {
+				font-size: 1.5rem;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrapper" class="container">
+			<h1>HTML Calculator</h1>
+			<div class="flex">
+				<p class="results-title">Result:</p>
+				<p id="result" class="results-number"></p>
+			</div>
+
+			<form id="calc" name="calc">
+				<fieldset>
+					<legend>Add</legend>
+					<input name="num1" autocomplete="off" />
+					<input name="num2" autocomplete="off" />
+					<button id="add">Add</button>
+					<br />
+				</fieldset>
+				<fieldset>
+					<legend>Subtract</legend>
+					<input name="num3" autocomplete="off" />
+					<input name="num4" autocomplete="off" />
+					<button id="subtract">Subract</button>
+					<br />
+				</fieldset>
+				<fieldset>
+					<legend>Multiply</legend>
+					<input name="num5" autocomplete="off" />
+					<input name="num6" autocomplete="off" />
+					<button id="multiply">Multiply</button>
+				</fieldset>
+			</form>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>
