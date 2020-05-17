@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="flex--center">
+			<h1>Mario Pest Control</h1>
+			<form name="pestControl" id="pestControl">
+				<ul>
+					<li>
+						<img src="./imgs/GOOMBAHD.png" alt="Goombah" />
+						<h2>Goombah</h2>
+						<p>Price: 5 Coins</p>
+						<input type="number" name="Goombah" placeholder="0" />
+					</li>
+					<li>
+						<img src="./imgs/Bob-ombMK7.png" alt="Bom-omb" />
+						<h2>Bomb-omb</h2>
+						<p>Price: 7 Coins</p>
+						<input placeholder="0" type="number" name="bob-omb" />
+					</li>
+					<li>
+						<img src="./imgs/Cheep_Cheep.png" alt="Cheep Cheep" />
+						<h2>Cheep Cheep</h2>
+						<p>Price: 11 Coins</p>
+						<input type="number" placeholder="0" name="cheep-cheep" />
+					</li>
+				</ul>
+				<div class="money" id="money">
+					<h2>Coins:</h2>
+					<h2 id="takehome">0</h2>
+				</div>
+				<button>Cash Out</button>
+			</form>
+			<div id="transactions"></div>
+			<div class="money" id="bank">
+				<h3>Total Coins:</h3>
+				<h3 id="balance">0</h3>
+			</div>
+			<footer>
+				<p>
+					Mario@mario.com | pestcontrol.com | 312 Green Tube Lane, Mario World
+				</p>
+			</footer>
+		</div>
+
+		<script src="index.js"></script>
+	</body>
+</html>
