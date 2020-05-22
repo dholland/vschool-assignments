@@ -2,21 +2,6 @@ const travelForm = document
 	.getElementById('travelForm')
 	.addEventListener('submit', handleForm2);
 
-function handleForm1(ev) {
-	ev.preventDefault();
-	let travelForm = ev.target;
-	const formData = new FormData(travelForm);
-	let obj = { diet: [] };
-	console.log(formData);
-	for (let [key, values] of formData) {
-		if (formData.get(key) === 'on') {
-			console.log(formData.get(values));
-		} else {
-			obj[key] = formData.get(key);
-		}
-	}
-}
-
 function handleForm2(ev) {
 	ev.preventDefault();
 	let travelForm = ev.target;
@@ -24,17 +9,35 @@ function handleForm2(ev) {
 
 	let obj = { diet: [] };
 
-	for (let [key] of formData) {
-		if (formData.get(key) === 'on') {
-			for (value of formData.values()) {
-				obj.diet.push(value);
-			}
+	console.log(formData);
+	// figuring out the data
+	let entries = [...formData.entries()];
+	const keys = [...formData.keys()];
+	const values = [...formData.values()];
+
+	// console.log('diet', diet);
+	// console.log('values', values);
+	// console.log('keys', keys);
+	// console.log('entries', entries);
+
+	// formData.forEach((item) => {
+	// 	let [key, value] = item;
+	// 	console.log(key, value);
+	// });
+
+	for (let [key, value] of formData) {
+		// console.log(formData.get(key));
+		if (key === 'Dietary Restrictions') {
+			obj.diet.push(value);
+			// for (value of formData.get(key)) {
+			// }
 		} else {
 			obj[key] = formData.get(key);
 		}
 	}
-	console.log(formData);
+
 	console.log('diet', obj.diet);
+	travelForm.reset();
 }
 // console.log(obj);
 
