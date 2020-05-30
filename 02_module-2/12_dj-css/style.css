@@ -1,0 +1,53 @@
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+}
+
+h1 {
+	text-align: center;
+}
+
+.base {
+	height: 200px;
+	width: 200px;
+	margin: 20px;
+	background-color: aqua;
+	transition: 300ms ease;
+	position: relative;
+}
+.box-1:hover {
+	height: 300px;
+	width: 300px;
+}
+
+.box-2:hover {
+	border-radius: 50%;
+	height: 150px;
+	width: 150px;
+}
+
+.box-3:hover {
+	border-radius: 30%;
+	background-color: brown;
+	transform: rotate(90deg);
+}
+
+.box-4:hover {
+	border-bottom: chocolate solid;
+	border-width: 40px;
+	transform: scale(1.2);
+	box-shadow: 0 10px 0 10px rgba(0, 0, 0, 0.04);
+}
+
+.box-5:hover {
+	transform: translate(0px, 100px);
+	transform: scale(-1);
+}
+
+.box-6:hover {
+	opacity: 10%;
+}
