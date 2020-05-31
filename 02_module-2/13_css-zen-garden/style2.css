@@ -1,0 +1,95 @@
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+/* This file based on 'Tranquille' by Dave Shea */
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+
+/* basic elements */
+html {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-size: 20px;
+}
+
+.page-wrapper {
+	display: grid;
+	grid-template-columns: 66% 33%;
+	grid-template-areas:
+		'header nav'
+		'supporting nav'
+		'supporting nav'
+		'supporting .'
+		'supporting .';
+}
+
+.intro {
+	grid-area: header;
+}
+
+.supporting {
+	grid-area: supporting;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: auto;
+}
+
+.explanation {
+	grid-column: 1/4;
+}
+.participation {
+	grid-column: 1/4;
+}
+.benefits {
+	grid-column: 1/4;
+}
+.requirements {
+	grid-column: 1/-1;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+.requirements h3 {
+	grid-column: 1/4;
+}
+
+.requirements p {
+	grid-column: 1/4;
+}
+.requirements p:last-child {
+	background-color: aqua;
+	grid-column: 1/-1;
+	padding-top: 3em;
+	padding-bottom: 3em;
+}
+
+footer {
+	grid-column: 1/-1;
+	grid-row-end: span 1;
+	height: 100px;
+	text-align: center;
+}
+.sidebar {
+	/* height: 100px; */
+	grid-area: nav;
+}
+.sidebar .wrapper {
+	grid-row: 1/6;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-areas: 'design-archives' 'design-selection' 'zen-resources' '.' '.';
+}
+.design-selection {
+	grid-area: design-selection;
+}
+
+.design-archive {
+	grid-area: design-archives;
+}
+.zen-resources {
+	grid-area: zen-resources;
+}
