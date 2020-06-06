@@ -45,7 +45,7 @@ h1 {
 
 .box-5:hover {
 	transform: translate(0px, 100px);
-	transform: scale(-1);
+	transform: scale(-0.5);
 }
 
 .box-6:hover {

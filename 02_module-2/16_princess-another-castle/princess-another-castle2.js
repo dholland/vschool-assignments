@@ -61,32 +61,34 @@ class Player {
 			console.log('You have a star!');
 		}
 	}
-	roll(num) {
-		if (num === 0) {
-			this.gotHit();
-			this.print();
-		} else if (num === 1) {
-			this.gotPowerup();
-			this.print();
-		} else {
-			this.addCoin();
-			this.print();
-		}
+}
+
+const startGame = new Player('', 0, '🥬');
+startGame.setName();
+
+function roll(intervalId) {
+	let num = getRandomInt(0, 3);
+	if (startGame.gameActive === false) {
+		clearInterval(intervalId);
+	} else if (num === 0) {
+		startGame.gotHit();
+		startGame.print();
+	} else if (num === 1) {
+		startGame.gotPowerup();
+		startGame.print();
+	} else {
+		startGame.addCoin();
+		startGame.print();
 	}
 }
 
-const playGame = new Player('', 0, '🥬');
+console.log(startGame);
 
-playGame.setName();
 // playGame.print();
 
-while (playGame.gameActive) {
-	chance = getRandomInt(0, 3);
-	playGame.roll(chance);
-	wait(1);
+function playGame() {
+	let intervalId = setInterval(() => roll(intervalId), 1000);
+	console.log(startGame.gameActive);
 }
 
-let intervalId;
-
-// setInterval(playGame.roll, 1000);
-// clearInterval(intervalId);
+playGame();

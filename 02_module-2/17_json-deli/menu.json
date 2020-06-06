@@ -1,0 +1,104 @@
+{
+	"menu": [
+		{
+			"breakfast": [
+				{
+					"name": "HERBED EGG",
+					"desc": "House-made herbed focaccia, egg soufflé, fresh ricotta cheese, bacon, basil pesto",
+					"cost": 9,
+					"category": "BREAKFAST SANDWICHES"
+				},
+				{
+					"name": "JACKSON HIPPIE",
+					"desc": "GF English muffin, egg white soufflé, summer squash, goat cheese, beet chips, smoked tomato butter",
+					"cost": 10,
+					"category": "BREAKFAST SANDWICHES"
+				},
+				{
+					"name": "JACKSON HIPPIE",
+					"desc": "GF English muffin, egg white soufflé, summer squash, goat cheese, beet chips, smoked tomato butter",
+					"cost": 10,
+					"category": "BREAKFAST SANDWICHES"
+				}
+			]
+		},
+		{
+			"lunch": [
+				{
+					"name": "CAPRESE",
+					"desc": "Heirloom tomatoes, fresh mozzarella, arugula pesto, balsamic onion, arugula, lemon vinaigrette.",
+					"cost": 12,
+					"category": "SANDWICHES",
+					"served": "10:30am to 3pm daily"
+				},
+				{
+					"name": "MEXI CHOP",
+					"desc": "Romaine, black beans, radish, bacon, Red Bird chicken, goat cheese, tomato, avocado,  cilantro, lemon vinaigrette.",
+					"cost": 16,
+					"category": "SANDWICHES",
+					"served": "10:30am to 3pm daily"
+				}
+			]
+		},
+		{
+			"sides": [
+				{
+					"name": "Egg soufflé",
+					"cost": 2
+				},
+				{
+					"name": "Sweet Cheeks maple sage sausage",
+					"cost": 4
+				},
+				{
+					"name": "Bacon",
+					"cost": 4
+				},
+				{
+					"name": "Granola parfait",
+					"cost": 8
+				}
+			]
+		},
+		{
+			"coffee": [
+				{
+					"name": "PICNIC BLEND DRIP",
+					"cost": 2
+				},
+				{
+					"name": "INTELLIGENTSIA DRIP",
+					"cost": 4
+				},
+				{
+					"name": "CORTADO",
+					"cost": 3.75
+				},
+				{
+					"name": "MOCHA",
+					"cost": 4.5
+				},
+				{
+					"name": "NITRO COLD BREW",
+					"cost": 5
+				}
+			]
+		},
+		{
+			"pastry": [
+				{
+					"name": "butter croissant",
+					"cost": 3
+				},
+				{
+					"name": "CHOCOLATE CROISSANT",
+					"cost": 3.75
+				},
+				{
+					"name": "RUM RAISIN CRUMB COFFEE CAKE",
+					"cost": 3.75
+				}
+			]
+		}
+	]
+}

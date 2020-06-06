@@ -78,15 +78,14 @@ class Player {
 const playGame = new Player('', 0, '🥬');
 
 playGame.setName();
-// playGame.print();
-
-while (playGame.gameActive) {
-	chance = getRandomInt(0, 3);
-	playGame.roll(chance);
-	wait(1);
-}
 
 let intervalId;
 
-// setInterval(playGame.roll, 1000);
-// clearInterval(intervalId);
+setInterval(playGame.roll, 1000);
+clearInterval(intervalId);
+
+// while (playGame.gameActive) {
+// 	chance = getRandomInt(0, 3);
+// 	playGame.roll(chance);
+// 	wait(1);
+// }
