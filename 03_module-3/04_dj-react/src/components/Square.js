@@ -1,5 +1,7 @@
 import React from 'react';
 
 export default function Square(props) {
-	return <div style={props.color}></div>;
+	return (
+		<div className='square' style={{ backgroundColor: `${props.color}` }}></div>
+	);
 }

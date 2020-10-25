@@ -2,29 +2,34 @@ import React, { Component } from 'react';
 import './App.css';
 
 import Header from './components/Header';
+import Square from './components/Square';
 
 export default class App extends Component {
 	state = {
-		color: 'white',
+		colors: ['white', 'black', 'white', 'black', 'white'],
 	};
 
 	toggleColor = () => {
-		let color = this.state.color;
-		this.setState(color === 'white' ? { color: 'black' } : { color: 'white' });
+		this.setState((prevState) => {
+			let newState = prevState.colors.map((color) => {
+				return color === 'white' ? 'black' : 'white';
+			});
+			return { colors: newState };
+		});
 	};
 
 	render() {
+		const squares = this.state.colors.map((color, idx) => {
+			return <Square key={idx} color={color} />;
+		});
 		return (
-			<div className='container virtical--center'>
+			<div className='container'>
 				<div className='buttons'>
-					<button onClick={this.toggleColor}>Button 1</button>
+					<button onClick={this.toggleColor}>Toggle Color</button>
 					<button>Button 2</button>
 				</div>
-				<div className='pad'>
-					<div
-						className='square'
-						style={{ backgroundColor: `${this.state.color}` }}></div>
-				</div>
+				<div className='break'></div>
+				<div className='pad'>{squares}</div>
 			</div>
 		);
 	}

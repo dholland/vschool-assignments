@@ -19,6 +19,11 @@
 	border: 1px solid black;
 }
 
+.break {
+	flex-basis: 100%;
+	height: 0;
+}
+
 header {
 	text-align: center;
 	padding-bottom: 10px;
@@ -41,6 +46,7 @@ footer {
 .square {
 	width: 100px;
 	height: 100px;
+	margin: 10px;
 }
 
 .content {
