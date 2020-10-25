@@ -16,6 +16,7 @@ const friends = [
 				breed: 'Grizzly',
 			},
 		],
+		id: 0,
 	},
 	{
 		name: 'Bob',
@@ -26,6 +27,7 @@ const friends = [
 				breed: 'Australian Shepard',
 			},
 		],
+		id: 1,
 	},
 	{
 		name: 'Marcus',
@@ -40,6 +42,7 @@ const friends = [
 				breed: 'persian cat',
 			},
 		],
+		id: 2,
 	},
 	{
 		name: 'Jacob',
@@ -62,6 +65,7 @@ const friends = [
 				breed: 'sphynx cat',
 			},
 		],
+		id: 3,
 	},
 ];
 export default friends;

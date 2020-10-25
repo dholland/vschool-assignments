@@ -1,0 +1,53 @@
+body {
+	background: linear-gradient(180deg, #2bc0e4, #eaecc6);
+	height: 100vh;
+}
+.container {
+	width: 600px;
+	margin: 0 auto;
+	padding: 25px;
+}
+h1 {
+	text-align: center;
+}
+p {
+	font-size: small;
+	text-align: center;
+}
+form {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 1fr);
+	grid-gap: 5px;
+}
+input {
+	grid-column: 1/ 4;
+	height: 25px;
+}
+form button {
+	grid-column: 1/ 4;
+	height: 28px;
+}
+a,
+a:visited {
+	text-decoration: none;
+	color: black;
+}
+.checkbox {
+	font-size: 28px;
+}
+.todo-item {
+	font-size: 24px;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 8px;
+	border-bottom: gray 1px solid;
+}
+
+.todo-item img {
+	height: 250px;
+}
+
+[data-complete='true'] {
+	color: #eaecc6;
+}

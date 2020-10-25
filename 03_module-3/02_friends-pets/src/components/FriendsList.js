@@ -4,7 +4,14 @@ import Friend from './Friend';
 
 function FriendsList(props) {
 	const friendsMap = props.data.map((person) => {
-		return <Friend name={person.name} age={person.age} pets={person.pets} />;
+		return (
+			<Friend
+				key={person.id}
+				name={person.name}
+				age={person.age}
+				pets={person.pets}
+			/>
+		);
 	});
 
 	return (

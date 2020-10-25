@@ -1,0 +1,19 @@
+.flex {
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+}
+
+.card {
+	padding: 20px;
+	border: 0.2px solid lightgray;
+	border-radius: 10px;
+	min-width: 200px;
+	margin: 10px;
+	box-shadow: 0 10px 6px -6px #777;
+}
+
+img {
+	width: auto;
+	height: 250px;
+}

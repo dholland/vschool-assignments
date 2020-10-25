@@ -3,6 +3,7 @@ const travelForm = document
 	.addEventListener('submit', handleForm);
 
 function handleForm(ev) {
+	console.log('event', ev);
 	ev.preventDefault();
 	let travelForm = ev.target;
 	const formData = new FormData(travelForm);

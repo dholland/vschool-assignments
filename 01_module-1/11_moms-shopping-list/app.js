@@ -51,6 +51,7 @@ function addTodo(toDo, id, done, del) {
 //changes the array value based on the id it gets from the element
 function updateTodo() {
 	newVal = inputVal.value;
+	console.log(currentEl.id);
 	currentEl.parentNode.querySelector('.text').textContent = newVal;
 	LIST[currentEl.id].name = newVal;
 
@@ -104,6 +105,7 @@ function removeTodo(element) {
 }
 
 function editTodo(element) {
+	console.log(element.parentNode);
 	editing = true;
 	currentEl = element;
 	text = element.parentNode.querySelector('.text').textContent;
@@ -116,6 +118,7 @@ function editTodo(element) {
 // adds event listern to the whole LI then grabs each element based on what is clicked. This allows for one event listern to cover, complete, edit and delete
 list.addEventListener('click', function (event) {
 	let element = event.target;
+	console.log(element);
 	const elementJob = event.target.attributes.job.value;
 	if (elementJob == 'complete') {
 		completeTodo(element);

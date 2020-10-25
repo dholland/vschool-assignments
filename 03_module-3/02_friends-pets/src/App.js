@@ -10,8 +10,8 @@ function App() {
 		<div className='container '>
 			<div className='content'>
 				<Header
-					title='Vacation Spots'
-					appDescription='Use `.map` to make display a list of different vacation spots'
+					title='Friends with Pets'
+					appDescription='Use `.map` with different components'
 				/>
 				<FrirendsList data={friends} />
 			</div>

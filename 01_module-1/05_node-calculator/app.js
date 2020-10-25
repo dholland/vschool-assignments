@@ -16,7 +16,7 @@ const num2 = Number(number2);
 const operator = ['Add', 'Subtract', 'Multiply', 'Divide'],
 	index = readline.keyInSelect(operator, 'Which Operation?');
 
-console.log('Ok, I will ' + operator[index] + 'your two numbers');
+console.log('Ok, I will ' + operator[index] + ' ' + 'your two numbers');
 
 //run function based on operator[index] match
 
