@@ -3,7 +3,7 @@
 	max-width: 1140px;
 	display: flex;
 	justify-content: center;
-	flex-wrap: wrap;
+	/* flex-wrap: wrap; */
 	margin: 0 auto;
 }
 
@@ -22,6 +22,10 @@
 .break {
 	flex-basis: 100%;
 	height: 0;
+}
+.pad {
+	display: block;
+	width: 500px;
 }
 
 header {
@@ -47,6 +51,11 @@ footer {
 	width: 100px;
 	height: 100px;
 	margin: 10px;
+	display: inline-block;
+}
+
+.controls {
+	height: 20px;
 }
 
 .content {
