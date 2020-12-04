@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 
 import Header from './components/Header';
+import Form from './components/Form';
+import ImageList from './components/ImageList';
 
 function App() {
 	return (
@@ -11,15 +13,10 @@ function App() {
 					title='Uguly Thing!'
 					appDescription='Make something really cool'
 				/>
-				<h2>Let's Get Coding</h2>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam facilis
-					autem doloremque! Voluptate eligendi commodi eum totam cupiditate
-					placeat, vitae fuga, excepturi rem maxime expedita nihil optio
-					temporibus cum quam.
-				</p>
+				<Form />
+				<ImageList />
+				<footer>Date: </footer>
 			</div>
-			<footer>Date: </footer>
 		</div>
 	);
 }

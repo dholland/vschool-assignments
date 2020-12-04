@@ -39,4 +39,9 @@ footer {
 	padding: 50px;
 	border-radius: 10px;
 	min-width: 100%;
+	min-height: 600px;
+}
+
+.form-controler {
+	min-height: 150px;
 }

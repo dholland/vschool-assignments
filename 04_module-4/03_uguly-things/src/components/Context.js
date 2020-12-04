@@ -1,36 +1,56 @@
 import React, { Component } from 'react';
-const { Provider, Consumer } = React.createContext();
+const UglyThingsContext = React.createContext();
 
-class ContextProvider extends Component {
+class UglyContextProvider extends Component {
 	state = {
 		isLoading: false,
-		uglyImages: [
-			{
-				_id: '5faf0ec0ee6f8d3fc3feb354',
-				title: 'Title here',
-				description: 'Description here',
-				imgUrl: 'http://www.example.com/some-link-to-a-cool-photo.jpg',
-			},
-		],
+		newImage: {
+			title: '',
+			description: '',
+			imgURL: '',
+		},
+		uglyImages: [],
 	};
 
 	loadImages = () => {
 		fetch();
 	};
 
-	saveImage = (obj) => {};
+	handleChange = (e) => {
+		const { name, value } = e.target;
+		this.setState((prevState) => {
+			return {
+				newImage: {
+					...prevState.newImage,
+					[name]: value,
+				},
+			};
+		});
+	};
+
+	handleSubmit = (e) => {
+		e.preventDefault();
+		this.setState((prevState) => {
+			return {
+				uglyImages: [...prevState.uglyImages, { ...this.state.newImage }],
+				newImage: { title: '', description: '', imgURL: '' },
+			};
+		});
+	};
 
 	render() {
 		return (
-			<Provider
+			<UglyThingsContext.Provider
 				value={{
 					uglyImages: this.state.uglyImages,
+					newImage: this.state.newImage,
+					handleChange: this.handleChange,
+					handleSubmit: this.handleSubmit,
 					loadImages: this.loadImages,
-					saveImage: this.saveImage,
 				}}>
 				{this.props.children}
-			</Provider>
+			</UglyThingsContext.Provider>
 		);
 	}
 }
-export { ContextProvider, Consumer as ContextConsumer };
+export { UglyContextProvider, UglyThingsContext };
