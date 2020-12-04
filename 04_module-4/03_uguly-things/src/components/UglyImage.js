@@ -5,7 +5,7 @@ export default function UglyImage(props) {
 		<div>
 			<h1>{props.title}</h1>
 			<img
-				style={{ width: '300px' }}
+				style={{ width: '400px' }}
 				src={props.imgURL}
 				alt={props.description}
 			/>
