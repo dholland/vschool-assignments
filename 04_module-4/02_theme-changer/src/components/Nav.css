@@ -1,0 +1,13 @@
+ul {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	list-style: none;
+	/* background-color: aqua; */
+	height: 50px;
+}
+
+li:hover {
+	border-bottom: black solid 1px;
+	padding-bottom: 10px;
+}
