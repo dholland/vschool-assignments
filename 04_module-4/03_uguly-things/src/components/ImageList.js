@@ -5,7 +5,7 @@ function ImageList() {
 	const context = useContext(UglyThingsContext);
 
 	return (
-		<div>
+		<div className='image-list'>
 			{context.uglyImages.map((item) => {
 				return (
 					<UglyImage

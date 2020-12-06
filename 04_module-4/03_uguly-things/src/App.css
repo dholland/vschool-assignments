@@ -1,5 +1,4 @@
 .container {
-	min-height: 95vh;
 	max-width: 1140px;
 	display: flex;
 	justify-content: center;
@@ -15,6 +14,16 @@
 	flex-direction: column;
 }
 
+.content {
+	display: grid;
+	grid-template-rows: 150px 100px 1fr 75px;
+	background-color: white;
+	padding: 50px;
+	border-radius: 10px;
+	min-width: 100%;
+	position: relative;
+}
+
 header {
 	text-align: center;
 	padding-bottom: 10px;
@@ -27,21 +36,52 @@ footer {
 	border-bottom-right-radius: 10px;
 	padding-top: 10px;
 	text-align: center;
-	position: relative;
-	top: -10px;
+	bottom: 0px;
 	height: 3rem;
 	background-color: cadetblue;
 	min-width: 100%;
 }
 
-.content {
-	background-color: white;
-	padding: 50px;
-	border-radius: 10px;
-	min-width: 100%;
-	min-height: 600px;
-}
-
 .form-controler {
 	min-height: 150px;
+}
+
+.image-list {
+	display: grid;
+	gap: 10px;
+	grid-template-columns: repeat(3, minmax(150px, 1fr));
+}
+
+.image-card {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+}
+
+.image-card-image-wrapper {
+}
+
+.image-responsive img {
+	object-fit: cover;
+	width: 320px;
+	height: 320px;
+	object-position: center;
+}
+
+@media only screen and (max-width: 1200px) {
+	.image-list {
+		display: grid;
+		gap: 10px;
+		grid-template-columns: repeat(2, minmax(150px, 1fr));
+		justify-content: space-around;
+	}
+
+	@media only screen and (max-width: 768px) {
+		.image-list {
+			display: grid;
+			gap: 0px;
+			grid-template-columns: 1fr;
+			justify-content: space-around;
+		}
+	}
 }

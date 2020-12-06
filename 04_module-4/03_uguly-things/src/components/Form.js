@@ -9,6 +9,7 @@ function Form() {
 		<div className='form-controler'>
 			<form onSubmit={context.handleSubmit}>
 				<input
+					placeholder='Image Title'
 					onChange={context.handleChange}
 					type='text'
 					name='title'
@@ -16,6 +17,7 @@ function Form() {
 					id='title'
 				/>
 				<input
+					placeholder='Image Description'
 					onChange={context.handleChange}
 					type='text'
 					name='description'
@@ -23,6 +25,7 @@ function Form() {
 					id='description'
 				/>
 				<input
+					placeholder='Image URL'
 					onChange={context.handleChange}
 					type='text'
 					name='imgURL'
