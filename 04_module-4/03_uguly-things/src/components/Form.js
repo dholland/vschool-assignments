@@ -28,9 +28,9 @@ function Form() {
 					placeholder='Image URL'
 					onChange={context.handleChange}
 					type='text'
-					name='imgURL'
-					value={context.newImage.imgURL}
-					id='imgURL'
+					name='imgUrl'
+					value={context.newImage.imgUrl}
+					id='imgUrl'
 				/>
 				<button type='submit'>Add Image</button>
 			</form>

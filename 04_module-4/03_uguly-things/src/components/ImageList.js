@@ -1,8 +1,12 @@
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import { UglyThingsContext } from './Context';
 import UglyImage from './UglyImage';
 function ImageList() {
 	const context = useContext(UglyThingsContext);
+
+	useEffect(() => {
+		context.loadImages();
+	}, []);
 
 	return (
 		<div className='image-list'>
@@ -13,7 +17,7 @@ function ImageList() {
 						id={item._id}
 						title={item.title}
 						description={item.description}
-						imgURL={item.imgURL}
+						imgUrl={item.imgUrl}
 					/>
 				);
 			})}
