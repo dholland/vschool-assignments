@@ -21,7 +21,7 @@ class UglyContextProvider extends Component {
 			headers: myHeaders,
 		};
 
-		fetch('https://api.vschool.io/danny/thing', requestOptions)
+		fetch('https://api.vschool.io/danny/thing/', requestOptions)
 			.then((response) => response.text())
 			.then((result) => {
 				this.setState((prevState) => {
