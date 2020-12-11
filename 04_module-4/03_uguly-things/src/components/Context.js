@@ -4,6 +4,7 @@ const UglyThingsContext = React.createContext();
 class UglyContextProvider extends Component {
 	state = {
 		isLoading: false,
+		isEditing: false,
 		newImage: {
 			title: '',
 			description: '',
@@ -13,7 +14,7 @@ class UglyContextProvider extends Component {
 	};
 
 	loadImages = () => {
-		var myHeaders = new Headers();
+		const myHeaders = new Headers();
 		myHeaders.append('Content-Type', 'application/json');
 
 		let requestOptions = {
@@ -48,7 +49,7 @@ class UglyContextProvider extends Component {
 	handleSubmit = (e) => {
 		e.preventDefault();
 
-		var myHeaders = new Headers();
+		const myHeaders = new Headers();
 		myHeaders.append('Content-Type', 'application/json');
 
 		let requestOptions = {
@@ -58,7 +59,7 @@ class UglyContextProvider extends Component {
 			redirect: 'follow',
 		};
 
-		fetch('https://api.vschool.io/danny/thing', requestOptions)
+		fetch('https://api.vschool.io/danny/thing/', requestOptions)
 			.then((response) => response.text())
 			.then((result) => this.loadImages())
 			.catch((error) => console.log('error', error));
@@ -69,10 +70,10 @@ class UglyContextProvider extends Component {
 	};
 
 	handleDelete = (id) => {
-		console.log(id);
-		var myHeaders = new Headers();
+		// console.log(id);
+		const myHeaders = new Headers();
 		myHeaders.append('Content-Type', 'application/json');
-		var requestOptions = {
+		const requestOptions = {
 			method: 'DELETE',
 			headers: myHeaders,
 			redirect: 'follow',
@@ -85,8 +86,43 @@ class UglyContextProvider extends Component {
 	};
 
 	handleEdit = (id) => {
-		let editImage = this.state.uglyImages.find((item) => (item.id = id));
-		console.log(editImage);
+		let editImage = this.state.uglyImages.find((item) => item._id === id);
+		console.log('Edit Image', editImage);
+
+		this.setState({
+			isEditing: true,
+			newImage: { ...editImage },
+		});
+	};
+
+	updateImage = (id) => {
+		const myHeaders = new Headers();
+		myHeaders.append('Content-Type', 'application/json');
+
+		let requestOptions = {
+			method: 'PUT',
+			headers: myHeaders,
+			body: JSON.stringify({ ...this.state.newImage }),
+			redirect: 'follow',
+		};
+
+		fetch('https://api.vschool.io/danny/thing/' + id, requestOptions)
+			.then((response) => response.text())
+			.then((result) => this.loadImages())
+			.catch((error) => console.log('error', error));
+
+		this.setState({
+			isEditing: false,
+			newImage: { title: '', description: '', imgUrl: '' },
+		});
+	};
+
+	cancelSave = () => {
+		console.log('Cancel');
+		this.setState({
+			isEditing: false,
+			newImage: { title: '', description: '', imgUrl: '' },
+		});
 	};
 
 	render() {
@@ -95,10 +131,13 @@ class UglyContextProvider extends Component {
 				value={{
 					uglyImages: this.state.uglyImages,
 					newImage: this.state.newImage,
+					isEditing: this.state.isEditing,
 					handleChange: this.handleChange,
 					handleSubmit: this.handleSubmit,
 					handleDelete: this.handleDelete,
 					handleEdit: this.handleEdit,
+					updateImage: this.updateImage,
+					cancelSave: this.cancelSave,
 					loadImages: this.loadImages,
 				}}>
 				{this.props.children}

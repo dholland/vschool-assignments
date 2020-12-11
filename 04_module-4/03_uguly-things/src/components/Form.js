@@ -32,7 +32,20 @@ function Form() {
 					value={context.newImage.imgUrl}
 					id='imgUrl'
 				/>
-				<button type='submit'>Add Image</button>
+				{context.isEditing ? (
+					<>
+						<button
+							type='button'
+							onClick={() => context.updateImage(context.newImage._id)}>
+							Save Image
+						</button>
+						<button type='button' onClick={context.cancelSave}>
+							Cancel
+						</button>
+					</>
+				) : (
+					<button type='submit'>Add Image</button>
+				)}
 			</form>
 		</div>
 	);
