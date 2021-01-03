@@ -1,7 +1,7 @@
 const csv = require('csvtojson');
 const fs = require('fs');
 
-const csvFilePath = './csv/vauto_inventory.csv';
+const csvFilePath = './csv/vauto_inventory_210103.csv';
 
 csv()
 	.fromFile(csvFilePath)
@@ -30,7 +30,7 @@ csv()
 			'./json/vauto_inventory.json',
 			JSON.stringify({
 				vehicles: removeLowPhotos(jsonObj),
-				makesAndModels: createMakesModels(jsonObj),
+				makesAndModels: createMakesModels(removeLowPhotos(jsonObj)),
 			})
 		);
 	});

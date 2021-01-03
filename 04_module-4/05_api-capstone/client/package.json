@@ -13,13 +13,15 @@
 		"postcss-cli": "^8.1.0",
 		"react": "^17.0.1",
 		"react-dom": "^17.0.1",
+		"react-query": "^3.5.9",
 		"react-router-dom": "^5.2.0",
 		"react-scripts": "4.0.1",
 		"tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
 		"web-vitals": "^1.0.1"
 	},
 	"scripts": {
-		"start": "react-scripts start && npm run server",
+		"blast": "react-scripts start && npm run server",
+		"start": "react-scripts start",
 		"server": "json-server --watch ../server/json/cleanInventory.json --routes ../server/routes.json --port 5000",
 		"build": "react-scripts build",
 		"test": "react-scripts test",

@@ -9,11 +9,11 @@ function App() {
 	return (
 		<div className='container mx-auto bg-white'>
 			<div className='flex flex-col'>
-				<Header
-					title='API Capstone Project'
-					appDescription='Stacauto Vehicle Search API'
-				/>
 				<Router>
+					<Header
+						title='API Capstone Project'
+						appDescription='Stacauto Vehicle Search API'
+					/>
 					<Main />
 				</Router>
 				<Footer date='12/19/20' />

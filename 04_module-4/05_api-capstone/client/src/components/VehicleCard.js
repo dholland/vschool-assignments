@@ -1,7 +1,7 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 
-export default function VehicleCard({ vehicle }) {
+export default function VehicleCard({ vehicle, removeFavorite }) {
 	const { VIN, Make, Model, Series, mainPhoto, Year } = vehicle;
 	const history = useHistory();
 
@@ -19,8 +19,11 @@ export default function VehicleCard({ vehicle }) {
 			<h2 className='text-sm'>VIN: {VIN}</h2>
 			
 				<button onClick={() => goToDetailsPage()} className='mt-3 hover:bg-blue-700 hover:text-gray-50'>
-					Details
+				Details
 				</button>
+			{removeFavorite && <button onClick={() => removeFavorite(VIN)} className='mt-3 hover:bg-red-600 hover:text-gray-50'>
+				Remove
+				</button>}
 			
 		</div>
 	);

@@ -10,7 +10,7 @@ const Find = (props) => {
 
 	useEffect(() => {
 		axios
-			.get('http://localhost:5000/makesmodels')
+			.get('https://data-tram.herokuapp.com/makesmodels')
 			.then(function (response) {
 				setMakesModels(response.data);
 			})
@@ -30,13 +30,14 @@ const Find = (props) => {
 	};
 
 	const handleSubmit = (e) => {
-		e.preventDefault();
+		// e.preventDefault();
 		console.log(selected);
 		const { make, model } = selected;
-		let url = `/collection/?make=${make}&model=${model}`
 		if (model !== undefined) {
 			history.push(`/collection/?make=${encodeURIComponent(make)}&model=${encodeURIComponent(model)}`);
 		}	
+		// setModels("")
+
 	};
 
 	const handleModelSelect = (e) => {
@@ -61,7 +62,7 @@ const Find = (props) => {
 				);
 			});
 
-	let modelOptions =
+	const modelOptions =
 		models &&
 		models
 			.sort((a, b) => a.localeCompare(b))

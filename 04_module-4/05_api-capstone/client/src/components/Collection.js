@@ -1,9 +1,11 @@
 import Axios from 'axios';
 import React from 'react';
 import { useEffect, useState } from 'react';
-import { useParams, useLocation, useRouteMatch } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
+
 import VehicleCard from './VehicleCard';
 import Find from './Find'
+
 const Collection = (props) => {
 	let { search } = useLocation();
 	const query = new URLSearchParams(search);
@@ -12,24 +14,25 @@ const Collection = (props) => {
 	const [collection, setCollection] = useState();
 
 	useEffect(() => {
-		Axios.get(`http://localhost:5000/collection/${make}/${model}`)
+		Axios.get(`https://data-tram.herokuapp.com/collection/${make}/${model}`)
 			.then(function (response) {
-				console.log(response.data);
+			
 				setCollection(response.data);
 			})
 			.catch(function (error) {
 				// handle error
 				console.log(error);
 			});
-	}, [query]);
+	}, [make, model]);
 
 	return (
-		<>
-		<Find />
-		<div className='flex flex-row flex-wrap justify-center'>
-			{collection && collection.map((car) => <VehicleCard vehicle={car} />)}
+		<div>
+			<Find />
+			<h2 className="text-2xl border-gray-700 border-b pt-5">Results</h2>
+			<h3 className='flex flex-row flex-wrap justify-center'>
+				{collection && collection.map((car) => <VehicleCard key={car.VIN} vehicle={car} />)}
+			</h3>
 		</div>
-	</>
 	)
 }
 
