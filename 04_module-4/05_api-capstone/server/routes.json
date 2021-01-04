@@ -1,0 +1,7 @@
+{
+	"/collection/make/:make": "/vehicles?Make=:make",
+	"/collection/model/:model": "/vehicles?Model=:model",
+	"/collection/:make/:model": "/vehicles?Make=:make&Model=:model",
+	"/vehicles/year/:year": "/vehicles?Year=:year",
+	"/details/:VIN": "/vehicles?VIN=:VIN"
+}
