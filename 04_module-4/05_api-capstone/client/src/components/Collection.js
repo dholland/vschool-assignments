@@ -16,7 +16,7 @@ const Collection = (props) => {
 	useEffect(() => {
 		Axios.get(`https://data-tram.herokuapp.com/collection/${make}/${model}`)
 			.then(function (response) {
-			
+				console.log(response.data);
 				setCollection(response.data);
 			})
 			.catch(function (error) {
@@ -26,13 +26,12 @@ const Collection = (props) => {
 	}, [make, model]);
 
 	return (
-		<div>
-			<Find />
-			<h2 className="text-2xl border-gray-700 border-b pt-5">Results</h2>
-			<h3 className='flex flex-row flex-wrap justify-center'>
-				{collection && collection.map((car) => <VehicleCard key={car.VIN} vehicle={car} />)}
-			</h3>
+		<>
+		<Find />
+		<div className='flex flex-row flex-wrap justify-center'>
+			{collection && collection.map((car) => <VehicleCard vehicle={car} />)}
 		</div>
+	</>
 	)
 }
 

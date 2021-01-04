@@ -1,7 +1,7 @@
+import React from 'react';
 import Axios from 'axios';
-import { useEffect, useState, useContext } from 'react';
+import { useEffect, useState } from 'react';
 import { useLocation, useHistory } from 'react-router-dom';
-import { favoritesContext } from '../context/FavoriteContext';
 
 export default function VehicleDetails() {
 	let { search } = useLocation();
@@ -9,13 +9,11 @@ export default function VehicleDetails() {
 	const detailsVIN = query.get('VIN');
 	const [details, setDetails] = useState({});
 	const history = useHistory()
-	const {favorites, addFavorite, removeFavorite, favVINS} = useContext(favoritesContext)
-
-	console.log(favVINS)
 
 	useEffect(() => {
 		Axios.get(`https://data-tram.herokuapp.com/details/${detailsVIN}`)
 			.then(function (response) {
+				console.log(response.data[0]);
 				setDetails(response.data[0]);
 			})
 			.catch(function (error) {
@@ -25,6 +23,7 @@ export default function VehicleDetails() {
 	}, [detailsVIN]);
 
 	const { mainPhoto, Make, Model, Series, VIN, Price, Description, Features, } = details;
+	console.log(mainPhoto);
 	return (
 		<div className="flex justify-center">
 			<div className="flex flex-col max-w-5xl">
@@ -41,18 +40,7 @@ export default function VehicleDetails() {
 					<h2>Price: ${Price}</h2>
 					<h2>VIN: {VIN}</h2>
 					<button className="mt-3 hover:bg-blue-700 hover:text-gray-50">Book Test Drive</button>
-					{favVINS.includes(VIN) ? <button
-							className="mt-3 mb-3 text-white bg-red-500 hover:bg-red-900 hover:text-gray-50 focus:border-none"
-							onClick={() => {
-								removeFavorite(VIN)
-							}}
-						>Remove</button>: <button
-							className="mt-3 mb-3 hover:bg-blue-700 hover:text-gray-50"
-							onClick={() => {
-								addFavorite(details)
-							}}
-						>Save To Favorites</button>}
-						
+					<button className="mt-3 mb-3 hover:bg-blue-700 hover:text-gray-50">Save To Favorites</button>
 				</div>
 		</div>
 				<section className="w-full justify-center">
@@ -65,8 +53,9 @@ export default function VehicleDetails() {
 					{/* <h3 className="border-t border-gray-500 text-xl font-semibold mb-1 mt-4">Features</h3> */}
 					<details className="border-t border-gray-500 text-xl font-semibold mb-1 mt-4 flex">
 						<summary >View Features</summary>
-						{Features && Features.map((feature, idx) =>
-							<li key={idx} className="text-base font-normal">{feature}</li>)}
+						<div className="">Test</div>
+						{Features && Features.map(feature =>
+							<p className="text-base font-normal">{feature}</p>)}
 					</details>
 				</section>
 		</div>

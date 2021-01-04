@@ -97,7 +97,7 @@ const Find = (props) => {
 					</option>
 					{modelOptions}
 				</select>
-				<button className='w-56' onClick={handleSubmit}>
+				<button type="button" className='w-56' onClick={handleSubmit}>
 					Results
 				</button>
 			</form>

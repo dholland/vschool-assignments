@@ -22,8 +22,8 @@
 	"scripts": {
 		"blast": "react-scripts start && npm run server",
 		"start": "react-scripts start",
-		"server": "json-server --watch ../server/json/cleanInventory.json --routes ../server/routes.json --port 5000",
 		"build": "react-scripts build",
+		"server": "json-server --watch ../server/json/cleanInventory.json --routes ../server/routes.json --port 5000",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
 		"build:css": "postcss src/styles/tailwind.css -o src/styles/main.css",
