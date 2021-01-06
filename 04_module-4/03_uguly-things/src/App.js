@@ -10,7 +10,7 @@ function App() {
 		<div className='container '>
 			<div className='content'>
 				<Header
-					title='Uguly Thing!'
+					title='Ugly Thing!'
 					appDescription='Make something really cool'
 				/>
 				<Form />
