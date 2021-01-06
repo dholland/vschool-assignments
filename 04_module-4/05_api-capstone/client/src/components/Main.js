@@ -5,16 +5,17 @@ import Collection from './Collection';
 import VehicleDetails from './VehicleDetails';
 import Favorites from './Favorites'
 import {FavoritesContextProvider} from '../context/FavoriteContext'
+import Home from './Home';
 
 
 export default function Main() {
 	return (
-		<main>
-			<div className=''>
+		<main className="">
+			<div  className=''>
 				<div className='px-4 py-6 sm:px-0'>
 					<Switch>
 						<Route exact path='/'>
-							<Find />
+							<Home />
 						</Route>
 						<Route path='/collection/'>
 							<Collection />

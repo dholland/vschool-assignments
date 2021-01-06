@@ -40,7 +40,7 @@ export default function VehicleDetails() {
 					<h2 className="text-xl">{Series}</h2>
 					<h2>Price: ${Price}</h2>
 					<h2>VIN: {VIN}</h2>
-					<button className="mt-3 hover:bg-blue-700 hover:text-gray-50">Book Test Drive</button>
+					{/* <button className="mt-3 hover:bg-blue-700 hover:text-gray-50">Book Test Drive</button> */}
 					{favVINS.includes(VIN) ? <button
 							className="mt-3 mb-3 text-white bg-red-500 hover:bg-red-900 hover:text-gray-50 focus:border-none"
 							onClick={() => {

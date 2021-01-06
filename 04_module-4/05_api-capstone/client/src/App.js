@@ -8,12 +8,9 @@ import Main from './components/Main';
 function App() {
 	return (
 		<div className='container mx-auto bg-white'>
-			<div className='flex flex-col'>
+			<div className='grid grid-rows-layout min-h-screen'>
 				<Router>
-					<Header
-						title='API Capstone Project'
-						appDescription='Stacauto Vehicle Search API'
-					/>
+					<Header/>
 					<Main />
 				</Router>
 				<Footer date='12/19/20' />
@@ -23,7 +20,3 @@ function App() {
 }
 
 export default App;
-
-<div className='container '>
-	<div className='content'></div>
-</div>;

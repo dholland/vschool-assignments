@@ -18,7 +18,7 @@ body {
 	flex-wrap: wrap;
 	margin: 0 auto;
 } */
-.content {
+/* .content {
 	max-width: 1000px;
 	min-width: 95vw;
 	display: grid;
@@ -28,17 +28,17 @@ body {
 	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
 		0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
 		0 22.3px 17.9px rgba(0, 0, 0, 0.072);
-}
+} */
 
-input[type='text'],
+/* input[type='text'],
 input[type='email'],
 input[type='password'] {
 	padding: 0.5rem;
-}
+} */
 
-main {
+/* main {
 	padding: 0 20px;
-}
+} */
 
 header {
 	text-align: center;
