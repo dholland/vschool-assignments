@@ -13,7 +13,7 @@ function App() {
 					<Header/>
 					<Main />
 				</Router>
-				<Footer date='12/19/20' />
+				<Footer date={new Date()} />
 			</div>
 		</div>
 	);
