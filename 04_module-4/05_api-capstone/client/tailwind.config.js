@@ -342,6 +342,8 @@ module.exports = {
       4: 'repeat(4, minmax(0, 1fr))',
       5: 'repeat(5, minmax(0, 1fr))',
       6: 'repeat(6, minmax(0, 1fr))',
+      layout: 'auto 1fr auto',
+      layout2: 'auto minmax(600px, 1fr) auto',
     },
     height: (theme) => ({
       auto: 'auto',
@@ -473,6 +475,9 @@ module.exports = {
     minHeight: {
       0: '0px',
       full: '100%',
+      '1/4': '25%',
+       '1/2': '50%',
+       '3/4': '75%',
       screen: '100vh',
     },
     minWidth: {
