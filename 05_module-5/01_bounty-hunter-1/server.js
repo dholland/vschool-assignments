@@ -28,8 +28,7 @@ app.get("/bounty/:id", (req, res) => {
 
 
 app.post("/bounties", (req, res) => {
-    
-    
+    console.log(req.body)
     res.send("POST on /bounty endpoint");
 
 });
