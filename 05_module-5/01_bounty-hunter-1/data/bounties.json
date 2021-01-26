@@ -1,9 +1,9 @@
 [
   {
-    "id": 1,
-    "name": "Rick Sanchez",
+    "id": "c4e5373f-0c59-4fc8-ba68-1f7191c8b421",
+    "name": "Danny Holland",
     "species": "Human",
-    "status": "Alive",
+    "status": "Dead",
     "gender": "Male",
     "type": "",
     "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
@@ -13,7 +13,7 @@
     }
   },
   {
-    "id": 2,
+    "id": "640bd0ff-9217-4766-a3db-2fd0c1b75b58",
     "name": "Morty Smith",
     "species": "Human",
     "status": "Alive",
@@ -26,7 +26,7 @@
     }
   },
   {
-    "id": 3,
+    "id": "0ef158e5-68e1-45de-86ba-8fa86383d532",
     "name": "Summer Smith",
     "species": "Human",
     "status": "Alive",
@@ -39,7 +39,7 @@
     }
   },
   {
-    "id": 4,
+    "id": "b9a9c708-117b-4557-a176-83e4f5e2ecc9",
     "name": "Beth Smith",
     "species": "Human",
     "status": "Alive",
@@ -52,7 +52,7 @@
     }
   },
   {
-    "id": 5,
+    "id": "99a81db3-ce18-49d2-b378-5868ce0d7c28",
     "name": "Jerry Smith",
     "species": "Human",
     "status": "Alive",
@@ -65,7 +65,7 @@
     }
   },
   {
-    "id": 6,
+    "id": "1af0a7d0-1102-4b6f-8332-69a034e11708",
     "name": "Abadango Cluster Princess",
     "species": "Alien",
     "status": "Alive",
@@ -78,7 +78,7 @@
     }
   },
   {
-    "id": 7,
+    "id": "cc33aed5-8949-47f9-953d-c60823b559be",
     "name": "Abradolf Lincler",
     "species": "Human",
     "status": "unknown",
@@ -91,7 +91,7 @@
     }
   },
   {
-    "id": 8,
+    "id": "2a04205c-af09-4067-b205-0bf997c3714c",
     "name": "Adjudicator Rick",
     "species": "Human",
     "status": "Dead",
@@ -104,7 +104,7 @@
     }
   },
   {
-    "id": 9,
+    "id": "1459f2b5-f672-4cea-952d-bcb5edf55d15",
     "name": "Agency Director",
     "species": "Human",
     "status": "Dead",
@@ -117,7 +117,7 @@
     }
   },
   {
-    "id": 10,
+    "id": "bdd25cfb-8ea5-4a2d-ad8c-45b95bac72d3",
     "name": "Alan Rails",
     "species": "Human",
     "status": "Dead",
@@ -130,7 +130,7 @@
     }
   },
   {
-    "id": 11,
+    "id": "007e9133-a847-43e5-a65a-b4e89a8257ac",
     "name": "Albert Einstein",
     "species": "Human",
     "status": "Dead",
@@ -143,7 +143,7 @@
     }
   },
   {
-    "id": 12,
+    "id": "81ecbfdc-fde1-43cc-a823-86c11cedb8bb",
     "name": "Alexander",
     "species": "Human",
     "status": "Dead",
@@ -156,7 +156,7 @@
     }
   },
   {
-    "id": 13,
+    "id": "c2c538ce-3ddb-4f47-82c3-942213b68c06",
     "name": "Alien Googah",
     "species": "Alien",
     "status": "unknown",
@@ -169,7 +169,7 @@
     }
   },
   {
-    "id": 14,
+    "id": "ca79e83c-5a89-4049-a7d5-3f3098bd2781",
     "name": "Alien Morty",
     "species": "Alien",
     "status": "unknown",
@@ -182,7 +182,7 @@
     }
   },
   {
-    "id": 15,
+    "id": "1e15e24a-8711-46f2-9251-c5023baa538e",
     "name": "Alien Rick",
     "species": "Alien",
     "status": "unknown",
@@ -195,7 +195,7 @@
     }
   },
   {
-    "id": 16,
+    "id": "62ea5a8f-11a1-42ea-99d4-24c217bc6cab",
     "name": "Amish Cyborg",
     "species": "Alien",
     "status": "Dead",
@@ -208,7 +208,7 @@
     }
   },
   {
-    "id": 17,
+    "id": "b1ea52ea-ea5e-4833-965e-13f8f2908aa6",
     "name": "Annie",
     "species": "Human",
     "status": "Alive",
@@ -221,7 +221,7 @@
     }
   },
   {
-    "id": 18,
+    "id": "94a71500-1f1f-468d-aa24-4f89a2eaa00a",
     "name": "Antenna Morty",
     "species": "Human",
     "status": "Alive",
@@ -234,7 +234,7 @@
     }
   },
   {
-    "id": 19,
+    "id": "d4b08048-10e2-4af8-bfb4-a51bd3536d71",
     "name": "Antenna Rick",
     "species": "Human",
     "status": "unknown",
@@ -247,7 +247,7 @@
     }
   },
   {
-    "id": 20,
+    "id": "fe8b6494-be95-4583-a9b7-d9d872ca39f3",
     "name": "Ants in my Eyes Johnson",
     "species": "Human",
     "status": "unknown",
@@ -260,7 +260,7 @@
     }
   },
   {
-    "id": 21,
+    "id": "2f4c74e6-7be7-4729-a1b2-9311ddb4fe05",
     "name": "Aqua Morty",
     "species": "Humanoid",
     "status": "unknown",
@@ -273,7 +273,7 @@
     }
   },
   {
-    "id": 22,
+    "id": "a08fbcfa-2a5a-4314-929e-dfd3913dc6e0",
     "name": "Aqua Rick",
     "species": "Humanoid",
     "status": "unknown",
@@ -286,7 +286,7 @@
     }
   },
   {
-    "id": 23,
+    "id": "5c1e38fb-02b1-437d-971f-065090b7bf10",
     "name": "Arcade Alien",
     "species": "Alien",
     "status": "unknown",
@@ -299,7 +299,7 @@
     }
   },
   {
-    "id": 24,
+    "id": "87ab8d65-9197-4bed-9a58-8d1304dab940",
     "name": "Armagheadon",
     "species": "Alien",
     "status": "Alive",
@@ -312,7 +312,7 @@
     }
   },
   {
-    "id": 25,
+    "id": "2ea63b93-f01c-4752-b740-8b5882db2632",
     "name": "Armothy",
     "species": "unknown",
     "status": "Dead",
@@ -325,7 +325,7 @@
     }
   },
   {
-    "id": 26,
+    "id": "7eedaac1-9bc7-47f8-9b61-aa82a28f9e80",
     "name": "Arthricia",
     "species": "Alien",
     "status": "Alive",
@@ -338,7 +338,7 @@
     }
   },
   {
-    "id": 27,
+    "id": "6ecc783a-1318-44df-b1bd-c6e15bb057be",
     "name": "Artist Morty",
     "species": "Human",
     "status": "Alive",
@@ -351,7 +351,7 @@
     }
   },
   {
-    "id": 28,
+    "id": "821bdddc-7cfd-40b9-a9f1-7c361fa34764",
     "name": "Attila Starwar",
     "species": "Human",
     "status": "Alive",
@@ -364,7 +364,7 @@
     }
   },
   {
-    "id": 29,
+    "id": "bff65f9e-fd09-475d-b6cb-eb2d8ea08ebe",
     "name": "Baby Legs",
     "species": "Human",
     "status": "Alive",
@@ -377,7 +377,7 @@
     }
   },
   {
-    "id": 30,
+    "id": "d0160ea4-e271-409d-88e1-6a1d9ddb3368",
     "name": "Baby Poopybutthole",
     "species": "Poopybutthole",
     "status": "Alive",
@@ -390,7 +390,7 @@
     }
   },
   {
-    "id": 31,
+    "id": "7e7c6439-77ef-4d97-ad7a-214d84198dd3",
     "name": "Baby Wizard",
     "species": "Alien",
     "status": "Dead",
@@ -403,7 +403,7 @@
     }
   },
   {
-    "id": 32,
+    "id": "0b0a7b16-9cce-4447-a297-9b22900dbaa1",
     "name": "Bearded Lady",
     "species": "Alien",
     "status": "Dead",
@@ -416,7 +416,7 @@
     }
   },
   {
-    "id": 33,
+    "id": "7cea3f51-9c7c-459e-9306-96d3c3d293df",
     "name": "Beebo",
     "species": "Alien",
     "status": "Dead",
@@ -429,7 +429,7 @@
     }
   },
   {
-    "id": 34,
+    "id": "6235c0c0-b8b0-405a-8114-f1da0d123831",
     "name": "Benjamin",
     "species": "Poopybutthole",
     "status": "Alive",
@@ -442,7 +442,7 @@
     }
   },
   {
-    "id": 35,
+    "id": "f74f269a-6c5c-4d9a-b52d-72927f3e619e",
     "name": "Bepisian",
     "species": "Alien",
     "status": "Alive",
@@ -455,7 +455,7 @@
     }
   },
   {
-    "id": 36,
+    "id": "c96bb341-c35e-4c84-8dfd-3a5790533e0f",
     "name": "Beta-Seven",
     "species": "Alien",
     "status": "Alive",
@@ -468,7 +468,7 @@
     }
   },
   {
-    "id": 37,
+    "id": "a010cc96-26c8-465b-9324-29d689aa113f",
     "name": "Beth Sanchez",
     "species": "Human",
     "status": "Alive",
@@ -481,7 +481,7 @@
     }
   },
   {
-    "id": 38,
+    "id": "42a3eb93-f538-4310-96b7-6fd40aa2f6d5",
     "name": "Beth Smith",
     "species": "Human",
     "status": "Alive",
@@ -494,7 +494,7 @@
     }
   },
   {
-    "id": 39,
+    "id": "f0a52753-0ef9-4ab3-b1c3-be82f53ce44f",
     "name": "Beth Smith",
     "species": "Human",
     "status": "Alive",
@@ -507,7 +507,7 @@
     }
   },
   {
-    "id": 40,
+    "id": "1f2ba0a8-620d-46ae-8c9c-e3f90c22137c",
     "name": "Beth's Mytholog",
     "species": "Mythological Creature",
     "status": "Dead",
@@ -520,7 +520,7 @@
     }
   },
   {
-    "id": 41,
+    "id": "b28bcc6b-9191-45c7-8136-8d30b7ecf2c0",
     "name": "Big Boobed Waitress",
     "species": "Mythological Creature",
     "status": "Alive",
@@ -533,7 +533,7 @@
     }
   },
   {
-    "id": 42,
+    "id": "965f5141-6035-4033-a964-c088f61f2b47",
     "name": "Big Head Morty",
     "species": "Human",
     "status": "unknown",
@@ -546,7 +546,7 @@
     }
   },
   {
-    "id": 43,
+    "id": "10bbc53b-22d1-416a-84db-1dd352217eed",
     "name": "Big Morty",
     "species": "Human",
     "status": "Dead",
@@ -559,7 +559,7 @@
     }
   },
   {
-    "id": 44,
+    "id": "9c914e9c-8455-435d-9693-2ac24cde1023",
     "name": "Body Guard Morty",
     "species": "Human",
     "status": "Dead",
@@ -572,7 +572,7 @@
     }
   },
   {
-    "id": 45,
+    "id": "0bfbbcb0-63f6-4362-9b36-4592a2442ce0",
     "name": "Bill",
     "species": "Human",
     "status": "Alive",
@@ -585,7 +585,7 @@
     }
   },
   {
-    "id": 46,
+    "id": "6c486c45-c5e0-469a-94f0-08c642476674",
     "name": "Bill",
     "species": "Animal",
     "status": "unknown",
@@ -598,7 +598,7 @@
     }
   },
   {
-    "id": 47,
+    "id": "95a687f3-b665-432c-9e48-d2257d7cd28f",
     "name": "Birdperson",
     "species": "Alien",
     "status": "Dead",
@@ -611,7 +611,7 @@
     }
   },
   {
-    "id": 48,
+    "id": "c4fa1b44-39b0-4107-83de-14f7a2940388",
     "name": "Black Rick",
     "species": "Human",
     "status": "Alive",
@@ -624,7 +624,7 @@
     }
   },
   {
-    "id": 49,
+    "id": "d4d63a9b-f754-4c82-bf5d-8a98706d2ddd",
     "name": "Blamph",
     "species": "Alien",
     "status": "Alive",
@@ -637,7 +637,7 @@
     }
   },
   {
-    "id": 50,
+    "id": "2ae9c8cd-52a5-49e8-b93e-1ef8b9f2e8dc",
     "name": "Blim Blam",
     "species": "Alien",
     "status": "Alive",
@@ -650,7 +650,7 @@
     }
   },
   {
-    "id": 51,
+    "id": "f60116f8-cb41-40dd-a731-57d17d1da552",
     "name": "Blue Diplomat",
     "species": "Alien",
     "status": "Alive",
@@ -663,7 +663,7 @@
     }
   },
   {
-    "id": 52,
+    "id": "2e4f346e-8004-46ca-9234-3a0a63d51508",
     "name": "Blue Footprint Guy",
     "species": "Human",
     "status": "Dead",
@@ -676,7 +676,7 @@
     }
   },
   {
-    "id": 53,
+    "id": "9acdba7e-f329-41b7-866f-b67eaeb1d08c",
     "name": "Blue Shirt Morty",
     "species": "Human",
     "status": "unknown",
@@ -689,7 +689,7 @@
     }
   },
   {
-    "id": 54,
+    "id": "4aae9d2a-af99-478f-bdb8-5f7b7d0c1330",
     "name": "Bobby Moynihan",
     "species": "Human",
     "status": "Alive",
@@ -702,7 +702,7 @@
     }
   },
   {
-    "id": 55,
+    "id": "37f48d89-1ddc-46f1-bc39-16b7517dd1db",
     "name": "Boobloosian",
     "species": "Alien",
     "status": "Dead",
@@ -715,7 +715,7 @@
     }
   },
   {
-    "id": 56,
+    "id": "91992b65-bc8f-49df-b48a-ab4801c4540f",
     "name": "Bootleg Portal Chemist Rick",
     "species": "Human",
     "status": "Dead",
@@ -728,7 +728,7 @@
     }
   },
   {
-    "id": 57,
+    "id": "49ec6315-f353-4404-8143-61387e0e7e29",
     "name": "Borpocian",
     "species": "Alien",
     "status": "Alive",
@@ -741,7 +741,7 @@
     }
   },
   {
-    "id": 58,
+    "id": "d6c05537-3b49-47df-9858-b407d648721e",
     "name": "Brad",
     "species": "Human",
     "status": "Alive",
@@ -754,7 +754,7 @@
     }
   },
   {
-    "id": 59,
+    "id": "7793a37c-6e8c-410f-b463-1d66cd300605",
     "name": "Brad Anderson",
     "species": "Human",
     "status": "Dead",
@@ -767,7 +767,7 @@
     }
   },
   {
-    "id": 60,
+    "id": "752d318a-5a3e-482d-a9bd-4b2ea4f705a8",
     "name": "Calypso",
     "species": "Human",
     "status": "Dead",
@@ -780,7 +780,7 @@
     }
   },
   {
-    "id": 61,
+    "id": "7c0f5ebe-1487-4b71-8da2-b1995fe44fd7",
     "name": "Campaign Manager Morty",
     "species": "Human",
     "status": "Dead",
@@ -793,7 +793,7 @@
     }
   },
   {
-    "id": 62,
+    "id": "8a5a2482-4fc8-4f06-a49a-d88b23dbcfe0",
     "name": "Canklanker Thom",
     "species": "Alien",
     "status": "Dead",
@@ -806,7 +806,7 @@
     }
   },
   {
-    "id": 63,
+    "id": "518e292d-7e84-4a5d-ab6d-1a27f8622565",
     "name": "Centaur",
     "species": "Mythological Creature",
     "status": "Alive",
@@ -819,7 +819,7 @@
     }
   },
   {
-    "id": 64,
+    "id": "5a75c23a-9f8c-480d-a34f-1e6849cdaa72",
     "name": "Chris",
     "species": "Alien",
     "status": "Dead",
@@ -832,7 +832,7 @@
     }
   },
   {
-    "id": 65,
+    "id": "0ba3c877-1e2a-4775-b0e4-6675114c1503",
     "name": "Chris",
     "species": "Humanoid",
     "status": "Alive",
@@ -845,7 +845,7 @@
     }
   },
   {
-    "id": 66,
+    "id": "c7707b44-058d-4d68-8063-0add1f3cd204",
     "name": "Coach Feratu (Balik Alistane)",
     "species": "Mythological Creature",
     "status": "Dead",
@@ -858,7 +858,7 @@
     }
   },
   {
-    "id": 67,
+    "id": "efa27dc8-0ee5-453b-b9b4-d00dd98970a2",
     "name": "Collector",
     "species": "Alien",
     "status": "Alive",
@@ -871,7 +871,7 @@
     }
   },
   {
-    "id": 68,
+    "id": "5ca6a9d0-3097-40bb-852e-f333a7020755",
     "name": "Colossus",
     "species": "Human",
     "status": "Dead",
@@ -884,7 +884,7 @@
     }
   },
   {
-    "id": 69,
+    "id": "d40ee95f-e937-4488-9ca9-84ad084b5afa",
     "name": "Commander Rick",
     "species": "Human",
     "status": "Dead",
@@ -897,7 +897,7 @@
     }
   },
   {
-    "id": 70,
+    "id": "767103a9-b99a-4791-97b3-1327c33d8aaf",
     "name": "Concerto",
     "species": "Humanoid",
     "status": "Dead",
@@ -910,7 +910,7 @@
     }
   },
   {
-    "id": 71,
+    "id": "2b3d9a1a-65f5-4d52-a053-ef81389bc2bc",
     "name": "Conroy",
     "species": "Robot",
     "status": "Dead",
@@ -923,7 +923,7 @@
     }
   },
   {
-    "id": 72,
+    "id": "7747e590-ba84-48db-9308-0f60e8b36d85",
     "name": "Cool Rick",
     "species": "Human",
     "status": "Alive",
@@ -936,7 +936,7 @@
     }
   },
   {
-    "id": 73,
+    "id": "7f19c3a4-d97f-4d0c-bdf5-750f75588299",
     "name": "Cop Morty",
     "species": "Human",
     "status": "Dead",
@@ -949,7 +949,7 @@
     }
   },
   {
-    "id": 74,
+    "id": "1c8bdb6f-fae2-4a29-9996-fe6865c86d25",
     "name": "Cop Rick",
     "species": "Human",
     "status": "Alive",
@@ -962,7 +962,7 @@
     }
   },
   {
-    "id": 75,
+    "id": "408e73b4-8bb4-45da-94e0-2e26fa88c0d9",
     "name": "Courier Flap",
     "species": "Alien",
     "status": "Alive",
@@ -975,7 +975,7 @@
     }
   },
   {
-    "id": 76,
+    "id": "1a40d8dc-585e-4aa0-a482-a1a2f3d5d1db",
     "name": "Cousin Nicky",
     "species": "Alien",
     "status": "Dead",
@@ -988,7 +988,7 @@
     }
   },
   {
-    "id": 77,
+    "id": "25b53361-7db1-4839-b3b3-dcd54837f2e0",
     "name": "Cowboy Morty",
     "species": "Human",
     "status": "Alive",
@@ -1001,7 +1001,7 @@
     }
   },
   {
-    "id": 78,
+    "id": "a9a7ee9e-40ec-4bee-90e2-b2bc9c20c1ac",
     "name": "Cowboy Rick",
     "species": "Human",
     "status": "Alive",
@@ -1014,7 +1014,7 @@
     }
   },
   {
-    "id": 79,
+    "id": "ae1bbf97-dc5f-4224-aea6-a442b6a0d072",
     "name": "Crab Spider",
     "species": "Alien",
     "status": "Alive",
@@ -1027,7 +1027,7 @@
     }
   },
   {
-    "id": 80,
+    "id": "080e2485-4337-4ab9-9355-17586e4fe9f1",
     "name": "Creepy Little Girl",
     "species": "Human",
     "status": "Alive",
@@ -1040,7 +1040,7 @@
     }
   },
   {
-    "id": 81,
+    "id": "ac6a6729-e597-49d6-9dc1-5b1a41702b2b",
     "name": "Crocubot",
     "species": "Animal",
     "status": "Dead",
@@ -1053,7 +1053,7 @@
     }
   },
   {
-    "id": 82,
+    "id": "3d1f2bbd-d276-4e0b-9fe7-debe700ccbea",
     "name": "Cronenberg Rick",
     "species": "Cronenberg",
     "status": "unknown",
@@ -1066,7 +1066,7 @@
     }
   },
   {
-    "id": 83,
+    "id": "db83c7fc-e2b7-4e45-9638-938b0a538314",
     "name": "Cronenberg Morty",
     "species": "Cronenberg",
     "status": "unknown",
@@ -1079,7 +1079,7 @@
     }
   },
   {
-    "id": 84,
+    "id": "f367a4cf-8b8d-4670-a9d5-653acbb4a141",
     "name": "Cult Leader Morty",
     "species": "Human",
     "status": "Alive",
@@ -1092,7 +1092,7 @@
     }
   },
   {
-    "id": 85,
+    "id": "49cc891b-8df4-4f68-a2dd-b4f4d2b66d88",
     "name": "Cyclops Morty",
     "species": "Humanoid",
     "status": "Alive",
@@ -1105,7 +1105,7 @@
     }
   },
   {
-    "id": 86,
+    "id": "85696977-9331-4054-816b-89505fcbc798",
     "name": "Cyclops Rick",
     "species": "Humanoid",
     "status": "Dead",
@@ -1118,7 +1118,7 @@
     }
   },
   {
-    "id": 87,
+    "id": "4773c5b2-213c-4f90-8833-9ca7ebc06230",
     "name": "Cynthia",
     "species": "Alien",
     "status": "Dead",
@@ -1131,7 +1131,7 @@
     }
   },
   {
-    "id": 88,
+    "id": "30eda241-5b68-4075-9f30-df7da9d90d84",
     "name": "Cynthia",
     "species": "Human",
     "status": "Alive",
@@ -1144,7 +1144,7 @@
     }
   },
   {
-    "id": 89,
+    "id": "b9e31472-1eb5-4651-9364-204f6f29cfa2",
     "name": "Dale",
     "species": "Mythological Creature",
     "status": "Dead",
@@ -1157,7 +1157,7 @@
     }
   },
   {
-    "id": 90,
+    "id": "b2836d6f-fdb2-4dbc-9522-43f616319829",
     "name": "Daron Jefferson",
     "species": "Alien",
     "status": "Alive",
@@ -1170,7 +1170,7 @@
     }
   },
   {
-    "id": 91,
+    "id": "ed2d368e-9e55-48ba-acdb-8c19ad255230",
     "name": "David Letterman",
     "species": "Human",
     "status": "Alive",
@@ -1183,7 +1183,7 @@
     }
   },
   {
-    "id": 92,
+    "id": "6ca76705-68b9-46b6-b141-b4e664920ab4",
     "name": "Davin",
     "species": "Human",
     "status": "Dead",
@@ -1196,7 +1196,7 @@
     }
   },
   {
-    "id": 93,
+    "id": "d5deaa9d-df12-42c6-ab87-0837d21e7031",
     "name": "Diablo Verde",
     "species": "Mythological Creature",
     "status": "Dead",
@@ -1209,7 +1209,7 @@
     }
   },
   {
-    "id": 94,
+    "id": "9bd311ab-ac10-4331-b96d-3dac8d2f42ec",
     "name": "Diane Sanchez",
     "species": "Human",
     "status": "unknown",
@@ -1222,7 +1222,7 @@
     }
   },
   {
-    "id": 95,
+    "id": "bc8930d5-05a0-43eb-931f-33fd842b105d",
     "name": "Dipper and Mabel Mortys",
     "species": "Human",
     "status": "unknown",
@@ -1235,7 +1235,7 @@
     }
   },
   {
-    "id": 96,
+    "id": "65d38647-c72c-4989-a389-a806eb2e47cc",
     "name": "Tuberculosis",
     "species": "Disease",
     "status": "Dead",
@@ -1248,7 +1248,7 @@
     }
   },
   {
-    "id": 97,
+    "id": "239c9b1c-9a29-4a69-ae52-1fc228973375",
     "name": "Gonorrhea",
     "species": "Disease",
     "status": "Dead",
@@ -1261,7 +1261,7 @@
     }
   },
   {
-    "id": 98,
+    "id": "e64af108-cfc3-43f5-b1d1-8d231e6db8ca",
     "name": "Hepatitis A",
     "species": "Disease",
     "status": "Dead",
@@ -1274,7 +1274,7 @@
     }
   },
   {
-    "id": 99,
+    "id": "d29b4163-0d83-4237-84f1-eb690c4b4a33",
     "name": "Hepatitis C",
     "species": "Disease",
     "status": "Dead",
@@ -1287,7 +1287,7 @@
     }
   },
   {
-    "id": 100,
+    "id": "04cec2e8-1e74-4446-a6b7-7b8fed271445",
     "name": "Bubonic Plague",
     "species": "Disease",
     "status": "Dead",
