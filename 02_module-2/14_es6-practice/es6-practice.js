@@ -49,7 +49,63 @@ const people = [
 	},
 ];
 
-function filterForFriendly(arr) {
-	return arr.filter((person) => person.friendly);
-}
-console.log(filterForFriendly(people));
+const twoNewPeople = [
+	{
+		name: 'Danny',
+		friendly: true,
+	},
+	{
+		name: 'Joker',
+		friendly: true,
+	},
+];
+
+// const newPeopleArray = [...people, ...twoNewPeople];
+
+// console.log(newPeopleArray);
+
+// function filterForFriendly(arr) {
+// 	return arr.filter((person) => person.friendly);
+// }
+// console.log(filterForFriendly(people));
+
+// const peopleArray = ['Princess Peach', 'Luigi', 'Mario', 'Bowser'];
+
+// const people = [
+// 	{
+// 		name: 'Princess Peach',
+// 		friendly: false,
+// 	},
+// 	{
+// 		name: 'Luigi',
+// 		friendly: true,
+// 	},
+// 	{
+// 		name: 'Mario',
+// 		friendly: true,
+// 	},
+// 	{
+// 		name: 'Bowser',
+// 		friendly: false,
+// 	},
+// ];
+
+const person = {
+	name: 'Bowser',
+	friendly: false,
+	color: 'red',
+	age: 50,
+	friends: ['Danny', 'Mario'],
+};
+
+const { name, age, friendly, color, friends } = person;
+
+// console.log(
+// 	`${person.name} is ${age} and his favorite color is ${color} and his best friends is ${friends[0]} `
+// );
+
+const route = 'asdfasdf';
+
+const url = `google.com/${route}`;
+
+console.log(url);
