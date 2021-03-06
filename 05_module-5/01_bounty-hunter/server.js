@@ -15,7 +15,8 @@ app.use(express.json())
 
 //Routes
 app.get('/create-bounties', (req, res) => {
-    createPageRequests(req.query.pages).then(data => {
+    createPageRequests(req.query.pages)
+    .then(data => {
         console.log("Response", data.length)
 
         res.send(`${data.length} Bounties Created`)
