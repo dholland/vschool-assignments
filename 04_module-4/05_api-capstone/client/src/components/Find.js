@@ -54,12 +54,12 @@ const Find = (props) => {
 		makesModels &&
 		Object.keys(makesModels)
 			.sort((a, b) => a.localeCompare(b))
-			.map((car, idx) => {
-				return (
-					<option key={idx} value={car}>
-						{car}
-					</option>
-				);
+				.map((car, idx) => {
+					return (
+						<option key={idx} value={car}>
+							{car}
+						</option>
+					);
 			});
 
 	const modelOptions =

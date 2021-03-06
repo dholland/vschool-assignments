@@ -5,7 +5,7 @@ export default function VehicleCard({ vehicle, removeFavorite }) {
 	const { VIN, Make, Model, Series, mainPhoto, Year } = vehicle;
 	const history = useHistory();
 
-	const goToDetailsPage = () => history.push(`/details/?VIN=${VIN}`)
+	const goToDetailsPage = () => history.push(`/details/?VIN=${VIN}`);
 
 	return (
 		<div className='flex flex-col p-2 m-4 w-1/4 shadow-lg'>
@@ -17,14 +17,19 @@ export default function VehicleCard({ vehicle, removeFavorite }) {
 			<h2 className='text-sm'>Series: {Series}</h2>
 			<h2 className='text-sm'>Year: {Year}</h2>
 			<h2 className='text-sm'>VIN: {VIN}</h2>
-			
-				<button onClick={() => goToDetailsPage()} className='mt-3 hover:bg-blue-700 hover:text-gray-50'>
+
+			<button
+				onClick={() => goToDetailsPage()}
+				className='mt-3 hover:bg-blue-700 hover:text-gray-50'>
 				Details
+			</button>
+			{removeFavorite && (
+				<button
+					onClick={() => removeFavorite(VIN)}
+					className='mt-3 hover:bg-red-600 hover:text-gray-50'>
+					Remove
 				</button>
-			{removeFavorite && <button onClick={() => removeFavorite(VIN)} className='mt-3 hover:bg-red-600 hover:text-gray-50'>
-				Remove
-				</button>}
-			
+			)}
 		</div>
 	);
 }
