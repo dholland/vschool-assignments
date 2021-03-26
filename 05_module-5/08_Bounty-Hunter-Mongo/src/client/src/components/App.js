@@ -16,16 +16,16 @@ const App = () => {
 
 	return (
 		<div className='App'>
-			<ul>
+			<div>
 				{bounties &&
 					bounties.map((bounty) => (
-						<li>
-							{bounty.name}
-
-							{bounty.status}
-						</li>
+						<ul>
+							<li>{bounty.name}</li>
+							<li>{bounty.status}</li>
+							<li>{bounty._id}</li>
+						</ul>
 					))}
-			</ul>
+			</div>
 		</div>
 	);
 };

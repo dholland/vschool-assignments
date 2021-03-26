@@ -13,4 +13,16 @@ bountyRouter.get('/', (req, res, next) => {
   });
 });
 
+bountyRouter.post('/', (req, res, next) => {
+  const newBounty = new Bounty(req.body);
+
+  Bounty.save((err, savedBounty) => {
+    if (err) {
+      res.status(500);
+      return next(err);
+    }
+    return res.status(201).send(savedBounty);
+  });
+});
+
 module.exports = bountyRouter;
